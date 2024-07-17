@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- modal price -->
+     <div id="modal_price"
+     class="fixed hidden bg-black/50 top-0 z-40 justify-center items-center left-0 w-full h-full">
+     <div id="inner_modal_price"
+         class="w-[41rem] mobile:w-[30.75rem] flex flex-col z-50 bg-white rounded-xl p-4 gap-3">
+         <div class="flex items-center gap-3">
+             <button id="close_modal">
+                 <img src="/icons/close.svg" alt="">
+             </button>
+             <span class="text-2xl font-bold">
+                 Price Calendar
+             </span>
+         </div>
+
+         <ul
+             class="grid gap-2 grid-cols-[repeat(5,7.4rem)] mobile:grid-cols-[repeat(3,7.4rem)] mobile:flex mobile:flex-wrap justify-center">
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">SAT - 15/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">SUN - 16/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">MON - 17/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">TUE - 18/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">WED - 19/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">THU - 20/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">FRI - 21/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">SAT - 22/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">SUN - 23/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">MON - 24/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">TUE - 25/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">WED - 26/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">THU - 27/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">FRI - 28/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">SAT - 29/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">SUN - 30/6</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">MON - 1/7</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">TUE - 2/7</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">WED - 3/7</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">THU - 4/7</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">FRI - 5/7</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">SAT - 6/7</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">SUN - 7/7</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">MON - 8/7</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+             <li
+                 class="group shrink-0 w-[7.4rem] h-[3.5rem] border-[0.125rem] border-[#E1E2E4] rounded-[0.5rem] flex flex-col items-center justify-center cursor-pointer hover:bg-crs-hover hover:border-crs-first">
+                 <div class="text-sm text-[#1C0E07] pt-2 group-hover:text-crs-first">TUE - 9/7</div>
+                 <div class="text-sm group-hover:text-crs-first text-[#A69F9B]">-----</div>
+             </li>
+         </ul>
+
+         <div class="flex items-center justify-center gap-2">
+             <button class="bg-[#307FF8] text-white rounded-xl py-3 px-3 gap-2 flex items-center">
+                 <img src="/icons/UpdateMain/arrow-down.svg" class="rotate-90" alt="..." />
+                 <span>25 Next days</span>
+             </button>
+             <button class="bg-[#307FF8] text-white rounded-xl py-3 px-3 gap-2 flex items-center">
+                 <span>25 Pre days</span>
+                 <img src="/icons/UpdateMain/arrow-down.svg" class="-rotate-90" alt="..." />
+             </button>
+         </div>
+     </div>
+ </div>
+</body>
+</html>

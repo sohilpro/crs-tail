@@ -1,0 +1,55 @@
+<div
+					class="fixed modal-login hidden w-full h-full left-0 top-0 z-[10] items-center justify-center break-words">
+					<div
+						class="w-[29rem] inner-modal relative bg-white rounded-[1rem] py-6 px-10 mobile:w-full mobile:h-full mobile:flex-col mobile:flex mobile:justify-center mobile:pb-[8rem]">
+						<div
+							class="absolute back-auth top-0 left-0 w-full mobile:flex items-center px-4 gap-2 py-4 text-[#1C0E07] font-bold text-xl border-b-[0.25rem] hidden">
+							<img class="w-10 h-10 cursor-pointer" src="/icons/auth/back.svg" alt="back" /><span
+								class="pt-0.5">Login/Register</span>
+						</div>
+						<h1 class="text-[2rem] font-bold leading-[3.5rem] text-[#1C0E07] text-center">Login</h1>
+						<h2 class="text-[#5B4A42] leading-[1.75rem] text-center">
+							Welcome to <span class="text-crs-first">CRS Trip</span>
+						</h2>
+						<div
+							class="flex p-1 h-[2.5rem] bg-[#F7F7F9] rounded-[0.5rem] text-xs text-[#514037] w-[13.25rem] mx-auto mt-4">
+							<div class="w-1/2 cursor-pointer flex items-center justify-center rounded-[0.5rem] reg-btn">
+								Register
+							</div>
+							<div
+								class="w-1/2 cursor-pointer flex items-center justify-center rounded-[0.5rem] text-crs-first bg-white">
+								Login
+							</div>
+						</div>
+						<form class="mt-10 space-y-4" autocomplete="on">
+							<div class="h-16 relative">
+								<img class="w-6 absolute rtl:right-4 ltr:left-4 top-0 bottom-0 my-auto"
+									src="/icons/auth/id.svg" alt="id" /><input id="crsid"
+									class="border-[#E1E2E4] hover:border-[#8CB8FB] h-full px-[3.25rem] w-full text-[#1C0E07] text-lg focus:outline-none bg-transparent placeholder:text-[#A69F9B] pt-1 border-[0.125rem] focus:border-[#307FF8] rounded-[1rem]"
+									type="text" placeholder="Agent ID" />
+							</div>
+							<div class="h-16 relative">
+								<img class="w-6 absolute rtl:right-4 ltr:left-4 top-0 bottom-0 my-auto"
+									src="/icons/auth/name.svg" alt="name" /><input id="username"
+									class="border-[#E1E2E4] hover:border-[#8CB8FB] h-full px-[3.25rem] w-full text-[#1C0E07] text-lg focus:outline-none bg-transparent placeholder:text-[#A69F9B] pt-1 border-[0.125rem] focus:border-[#307FF8] rounded-[1rem]"
+									type="text" placeholder="Username" />
+							</div>
+							<div class="h-16 relative">
+								<img class="w-6 absolute rtl:right-4 ltr:left-4 top-0 bottom-0 my-auto"
+									src="/icons/auth/password.svg" alt="password" /><input id="password"
+									class="border-[#E1E2E4] hover:border-[#8CB8FB] h-full px-[3.25rem] w-full text-[#1C0E07] text-lg focus:outline-none bg-transparent placeholder:text-[#A69F9B] pt-1 border-[0.125rem] focus:border-[#307FF8] rounded-[1rem]"
+									type="password" placeholder="Password" /><img
+									class="w-6 absolute rtl:left-4 ltr:right-4 top-0 bottom-0 my-auto cursor-pointer"
+									src="/icons/auth/visibility.svg" alt="visibility" />
+							</div>
+							<!--v-if-->
+						</form>
+						<div
+							class="flex items-center justify-center h-16 mt-4 rounded-[1rem] bg-[#307FF8] cursor-pointer gap-2 text-white">
+							<img class="w-6" src="/icons/auth/login-a.svg" alt="login" /> Login
+						</div>
+						<div class="mt-4 text-center text-[#A69F9B] leading-[1.75rem]">
+							Do not have an account? <span class="mx-2 text-[#307FF8] cursor-pointer">Register</span>
+						</div>
+					</div>
+				</div>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class=" flex justify-between">
+        <div class="flex items-center gap-10">
+            <img src="/images/UpdateMain/logo-white.svg" alt="logo" />
+
+            <div class="flex items-center gap-8 mobile:hidden">
+                <a href="#">services</a>
+                <a href="#">Support</a>
+                <a href="#">About us</a>
+                <a href="#">Connect us</a>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-3 mobile:hidden">
+
+            <div id="languages_parent" class="relative cursor-pointer">
+                <div id="inner_lang" class="flex items-center gap-3">
+                    <img src="/icons/UpdateMain/english.svg" alt="" />
+                    <span>
+                        English
+                    </span>
+                    <img src="/icons/UpdateMain/arrow-down.svg" alt="" />
+                </div>
+
+                <div id="languages"
+                    class="flex hidden text-[#1D1B20] flex-col gap-5 py-5 z-50 top-10 px-5 justify-center items-center absolute bg-white rounded-lg shadow">
+                    <div class="flex cursor-pointer items-center pr-10 gap-2">
+                        <img src="/icons/UpdateMain/farsi.svg" alt="..." />
+                        <span>Farsi</span>
+                    </div>
+                    <div class="flex cursor-pointer items-center gap-2">
+                        <img src="/icons/UpdateMain/arabic.svg" alt="..." />
+                        <span>Arabic</span>
+                    </div>
+                    <div class="flex cursor-pointer items-center gap-2">
+                        <img src="/icons/UpdateMain/english.svg" alt="..." />
+                        <span>English</span>
+                    </div>
+                </div>
+            </div>
+            <div id="profile_parent" class="flex cursor-pointer relative items-center gap-2">
+                <img src="/icons/UpdateMain/user.svg" alt="" />
+                <span>
+                    Ayoub Gharibavi
+                </span>
+                <img src="/icons/UpdateMain/arrow-down.svg" alt="" />
+
+                <div id="profile" class="absolute hidden text-[#1D1B20]">
+                    <div
+                        class="flex text-[#1D1B20] flex-col w-60 gap-5 py-5 z-50 h-max  top-5 px-5 absolute bg-white rounded-lg shadow">
+                        <div class="flex border-b pb-2 justify-between">
+                            <div class="flex flex-col gap-2"><span class="text-[#605D64]">Wallet </span>
+                                <div class="flex items-center gap-3"><span>12,000,000</span>
+                                    <p class="text-[#605D64]">USD</p>
+                                </div>
+                            </div><button>
+
+                                <img src="/icons/UpdateMain/add.svg" alt="" />
+                            </button>
+                        </div>
+                        <div class="flex cursor-pointer items-center gap-4">
+                            <img src="/icons/UpdateMain/acc.svg" alt="" />
+                            <span>Account</span>
+                        </div>
+                        <div class="flex cursor-pointer items-center gap-4">
+                            <img src="/icons/UpdateMain/transaction.svg" alt="" />
+                            <span>Transactions</span>
+                        </div>
+                        <div class="flex cursor-pointer items-center gap-4">
+                            <img src="/icons/UpdateMain/ticket.svg" alt="" />
+                            <span>Tickets</span>
+                        </div>
+
+                        <div class="flex cursor-pointer items-center gap-4">
+                            <img src="/icons/UpdateMain/support-2.svg" alt="" />
+                            <span>Support</span>
+                        </div>
+                        <div class="flex cursor-pointer text-[#EE0035] items-center gap-4">
+                            <img src="/icons/UpdateMain/logout.svg" alt="" />
+                            <span>Log out</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="sidebar_menu_icon" class="hidden mobile:block">
+            <img class="h-8 cursor-pointer" src="/icons/main/menu-w.svg" alt="menu" />
+
+            <div id="sidebar_menu"
+                class="fixed mobile:hidden left-0 top-0 w-[100vw] h-[100vh] bg-[#0000004D] backdrop-blur-[0.125rem] z-[100]">
+                <div
+                    class="w-[21.25rem] h-full bg-white rtl:rounded-l-[2rem] ltr:rounded-r-[2rem] flex flex-col justify-between">
+                    <div>
+                        <div
+                            class="mt-8 flex gap-4 items-center text-lg px-6 justify-between text-[2.15rem] font-bold text-[#1C0E07]">
+                            <img class="h-8 cursor-pointer" src="/images/UpdateMain/logo.svg" alt="search">
+                            <img class="h-8 cursor-pointer" src="/icons/main/close.svg" alt="close" />
+                        </div>
+                        <ul class="mt-10 text-xl text-[#5B4A42] px-6 space-y-3">
+                            <li
+                                class="text-crs-first bg-crs-active h-14 rounded-[0.75rem] flex gap-4 px-4 items-center cursor-pointer">
+
+                                Home
+                            </li>
+                            <li class="h-14 rounded-[0.75rem] flex gap-4 px-4 items-center cursor-pointer">
+                                Contact Us
+                            </li>
+                            <li class="h-14 rounded-[0.75rem] flex gap-4 px-4 items-center cursor-pointer">
+                                About Us
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-6">
+                        <div dir="rtl"
+                            class="flex p-1 mb-16 h-[3rem] bg-[#F7F7F9] rounded-[0.5rem] min-w-[13.25rem] text-[#514037]">
+                            <div
+                                class="w-1/3 grow cursor-pointer flex items-center justify-center rounded-[0.5rem]">
+                                فارسی
+                            </div>
+                            <div
+                                class="w-1/3 grow cursor-pointer flex items-center justify-center rounded-[0.5rem]">
+                                عربی
+                            </div>
+                            <div
+                                class="w-1/3 grow cursor-pointer flex items-center justify-center rounded-[0.5rem] text-crs-first bg-white">
+                                English
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
