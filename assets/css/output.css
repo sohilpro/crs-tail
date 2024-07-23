@@ -1321,10 +1321,6 @@ video {
   width: 39.25rem;
 }
 
-.w-\[41\.938rem\] {
-  width: 41.938rem;
-}
-
 .w-\[41rem\] {
   width: 41rem;
 }
@@ -1335,6 +1331,10 @@ video {
 
 .w-\[50px\] {
   width: 50px;
+}
+
+.w-\[50rem\] {
+  width: 50rem;
 }
 
 .w-\[6\.188rem\] {
@@ -1380,10 +1380,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[50rem\] {
-  width: 50rem;
 }
 
 .min-w-\[13\.25rem\] {
@@ -3003,6 +2999,11 @@ video {
   padding-right: 0.75rem;
 }
 
+.px-3\.5 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -3101,11 +3102,6 @@ video {
 .py-\[26px\] {
   padding-top: 26px;
   padding-bottom: 26px;
-}
-
-.px-3\.5 {
-  padding-left: 0.875rem;
-  padding-right: 0.875rem;
 }
 
 .pb-2 {
@@ -3535,10 +3531,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-\[\] {
-  color: ;
 }
 
 .underline {
@@ -4287,6 +4279,11 @@ body {
   background-color: rgb(240 241 242 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-\[\#F7F7F9\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(247 247 249 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-crs-first:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 90 0 / var(--tw-bg-opacity));
@@ -4294,11 +4291,6 @@ body {
 
 .hover\:bg-crs-hover:hover {
   background-color: #FF902926;
-}
-
-.hover\:bg-\[\#F7F7F9\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(247 247 249 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
