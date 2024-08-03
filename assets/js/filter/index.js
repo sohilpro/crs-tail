@@ -6,6 +6,7 @@ import "./Calendar.js";
 import "./menu.js";
 import "./type_way.js";
 import "./fast-search.js";
+import "./info_passengers.js";
 
 const ticketModal = document.getElementById("ticket-modal");
 const closeTicketModal = document.getElementById("close-ticket-modal");

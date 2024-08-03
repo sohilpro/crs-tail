@@ -182,14 +182,14 @@ const render = () => {
   dataOfStorage.forEach((i) => {
     fastSearchInner.insertAdjacentHTML(
       "beforeend",
-      `<div data-skeleton="true" class="flex rounded cursor-pointer show-price-date p-2 justify-between w-full items-center"><span>${i.origin} to ${i.destination}</span><span>1.500.00 تومان</span></div>`
+      `<div  class="flex rounded cursor-pointer show-price-date p-2 justify-between w-full items-center"><span>${i.origin} to ${i.destination}</span><span>1.500.00 تومان</span></div>`
     );
   });
 
   for (let i = dataOfStorage.length; i < 12; i++) {
     fastSearchInner.insertAdjacentHTML(
       "beforeend",
-      `<div data-skeleton="true" class="border w-full h-10 flex cursor-pointer justify-center items-center border-dashed bg-[#F6FAFF] rounded border-[#8CB8FB]"><img src="/icons/UpdateMain/plus.svg" alt="" /></div>`
+      `<div  class="border w-full h-10 flex cursor-pointer justify-center items-center border-dashed bg-[#F6FAFF] rounded border-[#8CB8FB]"><img src="/icons/UpdateMain/plus.svg" alt="" /></div>`
     );
   }
 
