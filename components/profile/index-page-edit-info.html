@@ -1,0 +1,124 @@
+<main id="edit_info" class="hidden flex-col gap-8 w-[80%] h-[49.125rem] bg-white p-6 rounded-xl">
+    <div class="flex items-center gap-2">
+        <img id="cancel_edit_info" src="/icons/UpdateMain/arrow-back.svg" class="ltr:rotate-180 cursor-pointer" alt="..." />
+
+        <span class="font-bold text-xl">
+            Edit user account information
+        </span>
+    </div>
+
+    <div class="grid gap-x-2 gap-y-5 grid-cols-3">
+        <div class="flex flex-col gap-1">
+            <label for="username">username</label>
+            <input type="text" id="username" value="test"
+                class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+        </div>
+        <div class="flex flex-col gap-1">
+            <label for="last_name">last name</label>
+            <input type="text" id="last_name" value="test"
+                class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+        </div>
+        <div class="flex flex-col gap-1">
+            <label for="address">address</label>
+            <input type="text" id="address" value="test"
+                class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+        </div>
+        <div class="flex flex-col gap-1">
+            <label for="email">email</label>
+            <input type="text" id="email" value="test"
+                class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+        </div>
+        <div class="flex flex-col gap-1">
+            <label for="phone">phone</label>
+            <input type="text" id="phone" value="test"
+                class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+        </div>
+        <div class="flex flex-col gap-1">
+            <label>birth date</label>
+            <div class="grid h-full gap-2 grid-cols-3">
+                <div class="flex relative justify-between w-full">
+                    <select id="year"
+                        class="border-[#DCDFE4] w-full focus:outline-none  rounded mobile:w-full border bg-white text-sm  py-3.5 px-3 appearance-none"
+                        name="year">
+                        <option value=" " selected hidden>year</option>
+                        <option value="male">2024</option>
+                    </select>
+                    <img class="absolute right-3 top-3.5" src="/icons/UpdateMain/arrow.svg" alt="" />
+                </div>
+                <div class="flex relative justify-between w-full">
+                    <select id="month"
+                        class="border-[#DCDFE4] focus:outline-none w-full  rounded mobile:w-full border bg-white text-sm  py-3.5 px-3 appearance-none"
+                        name="month">
+                        <option value=" " selected hidden>month</option>
+                        <option value="2024">2024</option>
+                    </select>
+                    <img class="absolute right-3 top-3.5" src="/icons/UpdateMain/arrow.svg" alt="" />
+                </div>
+                <div class="flex relative justify-between w-full">
+                    <select id="day"
+                        class="border-[#DCDFE4] focus:outline-none w-full  rounded mobile:w-full border bg-white text-sm  py-3.5 px-3 appearance-none"
+                        name="day">
+                        <option value=" " selected hidden>day</option>
+                        <option value="2024">2024</option>
+                    </select>
+                    <img class="absolute right-3 top-3.5" src="/icons/UpdateMain/arrow.svg" alt="" />
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="border h-36 w-[19.813rem] border-[#DCDFE4] rounded-xl relative">
+        <span class="bg-white absolute top-0 left-4 -translate-y-3">logo</span>
+    </div>
+
+    <div class="flex flex-col gap-5">
+        <span class="font-bold text-xl">
+            Edit password
+        </span>
+
+        <div class="flex flex-col gap-1">
+            <label for="new_password">New password</label>
+
+            <div class="flex justify-between border-[#DCDFE4] border w-1/2 rounded py-3.5 px-3">
+                <input id="input_password" type="password" placeholder="password..." class="outline-none w-full" />
+                <div id="container_show_password">
+                    <img id="show_eye" src="/icons/UpdateMain/eye.svg" alt="..." />
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-5">
+        <span class="font-bold text-xl">
+            Edit bank account information
+        </span>
+        <div class="grid grid-cols-2 gap-2">
+            <div class="flex flex-col gap-1">
+                <label for="acc_numb">account number</label>
+                <input type="text" id="acc_numb" value="test"
+                    class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+            </div>
+            <div class="flex flex-col gap-1">
+                <label for="c_numb">card number</label>
+                <input type="text" id="c_numb" value="5892101207025053"
+                    class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+            </div>
+
+        </div>
+    </div>
+
+    <div class="flex gap-2 items-center">
+        <button
+        id="save_change_info"
+            class="border py-3 px-10 items-center rounded-[0.625rem] text-white bg-[#307FF8] flex gap-2">
+            save changes
+        </button>
+        <button
+        id="cancel_edit_info"
+            class="border py-3 px-10 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
+            cancel
+        </button>
+    </div>
+</main>

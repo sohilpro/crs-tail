@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/output.css" />
+    <script type="module" src="../assets/js/profile/index.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-[#FCEAE1] select-none">
+    <div class="font-Kalameh">
+        <!-- @component.NavBar() -->
+        <nav class="bg-white mobile:px-10 lg:px-20 py-4 flex justify-between">
+            <div class="flex items-center gap-10">
+                <img src="/logo/crstrip.svg" class="w-[6.188rem] h-7" alt="logo" />
+
+                <div class="flex items-center gap-8 mobile:hidden">
+                    <a href="#">services</a>
+                    <a href="#">Support</a>
+                    <a href="#">About us</a>
+                    <a href="#">Connect us</a>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3 mobile:hidden">
+
+                <div id="languages_parent" class="relative cursor-pointer">
+                    <div id="inner_lang" class="flex items-center gap-3">
+                        <img src="/icons/UpdateMain/english.svg" alt="" />
+                        <span>
+                            English
+                        </span>
+                        <img src="/icons/UpdateMain/arrow.svg" alt="" />
+                    </div>
+
+                    <div id="languages"
+                        class="flex hidden text-[#1D1B20] flex-col gap-5 py-5 z-50 top-10 px-5 justify-center items-center absolute bg-white rounded-lg shadow">
+                        <div class="flex cursor-pointer items-center pr-10 gap-2">
+                            <img src="/icons/UpdateMain/farsi.svg" alt="..." />
+                            <span>Farsi</span>
+                        </div>
+                        <div class="flex cursor-pointer items-center gap-2">
+                            <img src="/icons/UpdateMain/arabic.svg" alt="..." />
+                            <span>Arabic</span>
+                        </div>
+                        <div class="flex cursor-pointer items-center gap-2">
+                            <img src="/icons/UpdateMain/english.svg" alt="..." />
+                            <span>English</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile_parent" class="flex cursor-pointer relative items-center gap-2">
+                    <img src="/icons/UpdateMain/user-b.svg" alt="" />
+                    <span>
+                        Ayoub Gharibavi
+                    </span>
+                    <img src="/icons/UpdateMain/arrow.svg" alt="" />
+
+                    <div id="profile" class="absolute hidden text-[#1D1B20]">
+                        <div
+                            class="flex text-[#1D1B20] flex-col w-60 gap-5 py-5 z-50 h-max  top-5 px-5 absolute bg-white rounded-lg shadow">
+                            <div class="flex border-b pb-2 justify-between">
+                                <div class="flex flex-col gap-2"><span class="text-[#605D64]">Wallet </span>
+                                    <div class="flex items-center gap-3"><span>12,000,000</span>
+                                        <p class="text-[#605D64]">USD</p>
+                                    </div>
+                                </div><button>
+
+                                    <img src="/icons/UpdateMain/add.svg" alt="" />
+                                </button>
+                            </div>
+                            <div class="flex cursor-pointer items-center gap-4">
+                                <img src="/icons/UpdateMain/acc.svg" alt="" />
+                                <span>Account</span>
+                            </div>
+                            <div class="flex cursor-pointer items-center gap-4">
+                                <img src="/icons/UpdateMain/transaction.svg" alt="" />
+                                <span>Transactions</span>
+                            </div>
+                            <div class="flex cursor-pointer items-center gap-4">
+                                <img src="/icons/UpdateMain/ticket.svg" alt="" />
+                                <span>Tickets</span>
+                            </div>
+
+                            <div class="flex cursor-pointer items-center gap-4">
+                                <img src="/icons/UpdateMain/support-2.svg" alt="" />
+                                <span>Support</span>
+                            </div>
+                            <div class="flex cursor-pointer text-[#EE0035] items-center gap-4">
+                                <img src="/icons/UpdateMain/logout.svg" alt="" />
+                                <span>Log out</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sidebar_menu_icon" class="hidden mobile:block">
+                <img class="h-8 cursor-pointer" src="/icons/main/menu.svg" alt="menu" />
+
+                <div id="sidebar_menu"
+                    class="fixed mobile:hidden left-0 top-0 w-[100vw] h-[100vh] bg-[#0000004D] backdrop-blur-[0.125rem] z-[100]">
+                    <div
+                        class="w-[21.25rem] h-full bg-white rtl:rounded-l-[2rem] ltr:rounded-r-[2rem] flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="mt-8 flex gap-4 items-center text-lg px-6 justify-between text-[2.15rem] font-bold text-[#1C0E07]">
+                                <img class="h-8 cursor-pointer" src="/images/UpdateMain/logo.svg" alt="search">
+                                <img class="h-8 cursor-pointer" src="/icons/main/close.svg" alt="close" />
+                            </div>
+                            <ul class="mt-10 text-xl text-[#5B4A42] px-6 space-y-3">
+                                <li
+                                    class="text-crs-first bg-crs-active h-14 rounded-[0.75rem] flex gap-4 px-4 items-center cursor-pointer">
+
+                                    Home
+                                </li>
+                                <li class="h-14 rounded-[0.75rem] flex gap-4 px-4 items-center cursor-pointer">
+                                    Contact Us
+                                </li>
+                                <li class="h-14 rounded-[0.75rem] flex gap-4 px-4 items-center cursor-pointer">
+                                    About Us
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="px-6">
+                            <div dir="rtl"
+                                class="flex p-1 mb-16 h-[3rem] bg-[#F7F7F9] rounded-[0.5rem] min-w-[13.25rem] text-[#514037]">
+                                <div
+                                    class="w-1/3 grow cursor-pointer flex items-center justify-center rounded-[0.5rem]">
+                                    فارسی
+                                </div>
+                                <div
+                                    class="w-1/3 grow cursor-pointer flex items-center justify-center rounded-[0.5rem]">
+                                    عربی
+                                </div>
+                                <div
+                                    class="w-1/3 grow cursor-pointer flex items-center justify-center rounded-[0.5rem] text-crs-first bg-white">
+                                    English
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="flex gap-7 mt-5 mb-28 container">
+
+            <aside class="h-[54.5rem] overflow-hidden rounded-[0.625rem] relative bg-white w-[20%]">
+                <div class="h-[9.5rem] w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
+                <div class="flex justify-center">
+                    <img src="/icons/UpdateMain/profile.png" alt="..." class="absolute top-24 rounded-full " />
+                </div>
+
+                <div class="flex mt-28 px-5 text-[#1D1B20] justify-center">
+                    <ul class="w-full flex flex-col gap-3">
+                        <li class="flex px-2.5 py-2 bg-[#FFDAC6] w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/profile.svg" alt="..." />
+
+                            <span>
+                                Profile
+                            </span>
+                        </li>
+                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
+
+                            <span>
+                                Wallet
+                            </span>
+                        </li>
+                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+
+                            <span>
+                                Tickets
+                            </span>
+                        </li>
+                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+
+                            <span>
+                                Transactions
+                            </span>
+                        </li>
+                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/support-2.svg" alt="..." />
+
+                            <span>
+                                Support
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="absolute flex justify-center w-full bottom-5 text-sm text-[#EE0035]">
+                    خروج از حساب کاربری
+                </button>
+            </aside>
+
+            <!-- @component.profile.index-page-modal() -->
+            <main id="info" class="flex flex-col gap-5 w-[80%] h-[49.125rem]">
+                <div class="bg-white p-6 flex flex-col rounded-xl gap-10 h-[65%] w-full">
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-[#1D1B20] text-2xl">
+                            User account information
+                        </span>
+
+                        <button id="edit_info_btn"
+                            class="border py-2 px-3 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
+                            edit
+
+                            <img src="/icons/UpdateMain/edit-b.svg" alt="..." />
+                        </button>
+                    </div>
+
+                    <div class="w-1/2">
+
+                        <main class="grid gap-5 items-center text-[#605D64] grid-cols-2">
+                            <span>
+                                logo
+                            </span>
+                            <div class="w-14 h-14 rounded-full border border-[#605D64]"></div>
+
+                            <span>
+                                username
+                            </span>
+                            <div class="text-[#1D1B20]">hossein_</div>
+
+                            <span>
+                                last name:
+                            </span>
+                            <div class="text-[#1D1B20]">eftekhair</div>
+
+                            <span>
+                                birth date:
+                            </span>
+                            <div class="text-[#1D1B20]">20/8/1378</div>
+
+                            <span>
+                                address:
+                            </span>
+                            <div class="text-[#1D1B20]">Najaf_Iraq</div>
+
+                            <span>
+                                phonen umber:
+                            </span>
+                            <div class="text-[#1D1B20]">09184720235</div>
+
+                            <span>
+                                email:
+                            </span>
+                            <div class="text-[#1D1B20]">hosseinahmadian3d17@gmail.com </div>
+
+                            <span>
+                                create date:
+                            </span>
+                            <div class="text-[#1D1B20]">11/3/1401 </div>
+                        </main>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 flex flex-col rounded-xl gap-10 h-[35%] w-full">
+                    <div class="flex justify-between items-center">
+                        <span class="font-bold text-[#1D1B20] text-2xl">
+                            Bank account information
+                        </span>
+
+                        <button id="edit_info_btn"
+                            class="border py-2 px-3 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
+                            edit
+
+                            <img src="/icons/UpdateMain/edit-b.svg" alt="..." />
+                        </button>
+                    </div>
+
+                    <div class="w-1/2">
+
+                        <main class="grid gap-5 items-center text-[#605D64] grid-cols-2">
+                            <span>
+                                cart number
+                            </span>
+                            <div class="text-[#1D1B20]">5891-1012-0702-5053</div>
+
+                            <span>
+                                acoount number
+                            </span>
+                            <div class="text-[#1D1B20]">5891-1012-0702-5053</div>
+
+                            <span>
+                                sheba number
+                            </span>
+                            <div class="text-[#1D1B20]">IR-5652136000000098658746</div>
+                        </main>
+                    </div>
+                </div>
+            </main>
+
+            <!-- @component.profile.index-page-edit-modal() -->
+            <main id="edit_info" class="hidden flex-col gap-8 w-[80%] h-[49.125rem] bg-white p-6 rounded-xl">
+                <div class="flex items-center gap-2">
+                    <img id="cancel_edit_info" src="/icons/UpdateMain/arrow-back.svg"
+                        class="ltr:rotate-180 cursor-pointer" alt="..." />
+
+                    <span class="font-bold text-xl">
+                        Edit user account information
+                    </span>
+                </div>
+
+                <div class="grid gap-x-2 gap-y-5 grid-cols-3">
+                    <div class="flex flex-col gap-1">
+                        <label for="username">username</label>
+                        <input type="text" id="username" value="test"
+                            class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <label for="last_name">last name</label>
+                        <input type="text" id="last_name" value="test"
+                            class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <label for="address">address</label>
+                        <input type="text" id="address" value="test"
+                            class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <label for="email">email</label>
+                        <input type="text" id="email" value="test"
+                            class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <label for="phone">phone</label>
+                        <input type="text" id="phone" value="test"
+                            class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <label>birth date</label>
+                        <div class="grid h-full gap-2 grid-cols-3">
+                            <div class="flex relative justify-between w-full">
+                                <select id="year"
+                                    class="border-[#DCDFE4] w-full focus:outline-none  rounded mobile:w-full border bg-white text-sm  py-3.5 px-3 appearance-none"
+                                    name="year">
+                                    <option value=" " selected hidden>year</option>
+                                    <option value="male">2024</option>
+                                </select>
+                                <img class="absolute right-3 top-3.5" src="/icons/UpdateMain/arrow.svg" alt="" />
+                            </div>
+                            <div class="flex relative justify-between w-full">
+                                <select id="month"
+                                    class="border-[#DCDFE4] focus:outline-none w-full  rounded mobile:w-full border bg-white text-sm  py-3.5 px-3 appearance-none"
+                                    name="month">
+                                    <option value=" " selected hidden>month</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                                <img class="absolute right-3 top-3.5" src="/icons/UpdateMain/arrow.svg" alt="" />
+                            </div>
+                            <div class="flex relative justify-between w-full">
+                                <select id="day"
+                                    class="border-[#DCDFE4] focus:outline-none w-full  rounded mobile:w-full border bg-white text-sm  py-3.5 px-3 appearance-none"
+                                    name="day">
+                                    <option value=" " selected hidden>day</option>
+                                    <option value="2024">2024</option>
+                                </select>
+                                <img class="absolute right-3 top-3.5" src="/icons/UpdateMain/arrow.svg" alt="" />
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border h-36 w-[19.813rem] border-[#DCDFE4] rounded-xl relative">
+                    <span class="bg-white absolute top-0 left-4 -translate-y-3">logo</span>
+                </div>
+
+                <div class="flex flex-col gap-5">
+                    <span class="font-bold text-xl">
+                        Edit password
+                    </span>
+
+                    <div class="flex flex-col gap-1">
+                        <label for="new_password">New password</label>
+
+                        <div class="flex justify-between border-[#DCDFE4] border w-1/2 rounded py-3.5 px-3">
+                            <input id="input_password" type="password" placeholder="password..."
+                                class="outline-none w-full" />
+                            <div id="container_show_password">
+                                <img id="show_eye" src="/icons/UpdateMain/eye.svg" alt="..." />
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-5">
+                    <span class="font-bold text-xl">
+                        Edit bank account information
+                    </span>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="flex flex-col gap-1">
+                            <label for="acc_numb">account number</label>
+                            <input type="text" id="acc_numb" value="test"
+                                class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label for="c_numb">card number</label>
+                            <input type="text" id="c_numb" value="5892101207025053"
+                                class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="flex gap-2 items-center">
+                    <button id="save_change_info"
+                        class="border py-3 px-10 items-center rounded-[0.625rem] text-white bg-[#307FF8] flex gap-2">
+                        save changes
+                    </button>
+                    <button id="cancel_edit_info"
+                        class="border py-3 px-10 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
+                        cancel
+                    </button>
+                </div>
+            </main>
+        </div>
+
+        <!-- @component.Footer() -->
+        <footer class="w-full">
+
+            <div class=" bg-crs-footer py-10 mobile:px-7">
+                <div class="flex px-[5rem] mobile:px-0 justify-between mobile:flex-col  lg:max-w-[105rem] lg:mx-auto">
+                    <div>
+                        <img src="/images/UpdateMain/logo.svg" alt="search">
+                        <p class="text-lg leading-[1.875rem] mt-2 text-Black/2">
+                            Where the Journey Begins and Memories are Made.
+                        </p>
+                        <div class="mt-10 mx-2 flex gap-2">
+                            <div class="bg-white rounded-[0.5rem] p-1 cursor-pointer">
+                                <img class="w-12 h-12" src="/icons/search/Instagram.svg" alt="Instagram" />
+                            </div>
+                            <div class="bg-white rounded-[0.5rem] p-1 cursor-pointer">
+                                <img class="w-12 h-12" src="/icons/search/Telegram.svg" alt="Telegram" />
+                            </div>
+                            <div class="bg-white rounded-[0.5rem] p-1 cursor-pointer">
+                                <img class="w-12 h-12" src="/icons/search/Whatsapp.svg" alt="Whatsapp" />
+                            </div>
+                        </div>
+                        <h2 class="font-bold text-crs-first mt-6 px-2">CRSTRIP<span class="text-[#2C160B]">.COM</span>
+                        </h2>
+                    </div>
+                    <div class="flex gap-[5.5rem] pt-4 mobile:my-6 mobile:justify-start justify-center">
+                        <div>
+                            <h4 class="text-2xl leading-[2.5rem] font-bold text-[#2C160B]">Menu</h4>
+                            <ul class="mt-6 space-y-4 text-[#5B4A42] text-xl leading-[1.875rem]">
+                                <li>Services</li>
+                                <li>Support</li>
+                                <li>About us</li>
+                                <li>Contact us</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl leading-[2.5rem] font-bold text-[#2C160B]">Contact Info</h4>
+                            <ul class="mt-6 space-y-4 text-[#5B4A42] text-xl leading-[1.875rem]">
+
+                                <li class="flex items-center gap-2">
+                                    <img class="w-6 h-6" src="/icons/UpdateMain/sms.svg" alt="call" /><span
+                                        dir="ltr">crstrip.com@gmail.com</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img class="w-6 h-6" src="/icons/UpdateMain/call.svg" alt="call" /><span
+                                        dir="ltr">+9647815639914</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img class="w-6 h-6" src="/icons/UpdateMain/location.svg" alt="location" /><span
+                                        dir="ltr">Najaf - Iraq</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div dir="ltr"
+                class="px-6 bg-white h-[4.5rem] flex items-center justify-center gap-2 text-sm text-[#2C160B]">
+                <img class="w-6 h-6" src="/icons/search/rights.svg" alt="rights" /><span class="pt-1.5">
+                    All rights to these services (website and mobile application) are reserved and owned by CRS
+                    Trip</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

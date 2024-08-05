@@ -3,6 +3,16 @@ export default {
   content: ["./**/*.{html,js}", "./*.{html,js}"],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: "1rem",
+          sm: "2rem",
+          lg: "4rem",
+          xl: "5rem",
+          "2xl": "6rem",
+        },
+      },
       screens: {
         laptop: { max: "0px" },
         tablet: { max: "0px" },

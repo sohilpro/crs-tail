@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/output.css" />
+    <script type="module" src="../assets/js/profile/index.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-[#FCEAE1] select-none">
+    <div class="font-Kalameh">
+        <!-- @component.NavBar() -->
+        <nav class="bg-white mobile:px-10 lg:px-20 py-4 flex justify-between">
+            <div class="flex items-center gap-10">
+                <img src="/logo/crstrip.svg" class="w-[6.188rem] h-7" alt="logo" />
+
+                <div class="flex items-center gap-8 mobile:hidden">
+                    <a href="#">services</a>
+                    <a href="#">Support</a>
+                    <a href="#">About us</a>
+                    <a href="#">Connect us</a>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3 mobile:hidden">
+
+                <div id="languages_parent" class="relative cursor-pointer">
+                    <div id="inner_lang" class="flex items-center gap-3">
+                        <img src="/icons/UpdateMain/english.svg" alt="" />
+                        <span>
+                            English
+                        </span>
+                        <img src="/icons/UpdateMain/arrow.svg" alt="" />
+                    </div>
+
+                    <div id="languages"
+                        class="flex hidden text-[#1D1B20] flex-col gap-5 py-5 z-50 top-10 px-5 justify-center items-center absolute bg-white rounded-lg shadow">
+                        <div class="flex cursor-pointer items-center pr-10 gap-2">
+                            <img src="/icons/UpdateMain/farsi.svg" alt="..." />
+                            <span>Farsi</span>
+                        </div>
+                        <div class="flex cursor-pointer items-center gap-2">
+                            <img src="/icons/UpdateMain/arabic.svg" alt="..." />
+                            <span>Arabic</span>
+                        </div>
+                        <div class="flex cursor-pointer items-center gap-2">
+                            <img src="/icons/UpdateMain/english.svg" alt="..." />
+                            <span>English</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile_parent" class="flex cursor-pointer relative items-center gap-2">
+                    <img src="/icons/UpdateMain/user-b.svg" alt="" />
+                    <span>
+                        Ayoub Gharibavi
+                    </span>
+                    <img src="/icons/UpdateMain/arrow.svg" alt="" />
+
+                    <div id="profile" class="absolute hidden text-[#1D1B20]">
+                        <div
+                            class="flex text-[#1D1B20] flex-col w-60 gap-5 py-5 z-50 h-max  top-5 px-5 absolute bg-white rounded-lg shadow">
+                            <div class="flex border-b pb-2 justify-between">
+                                <div class="flex flex-col gap-2"><span class="text-[#605D64]">Wallet </span>
+                                    <div class="flex items-center gap-3"><span>12,000,000</span>
+                                        <p class="text-[#605D64]">USD</p>
+                                    </div>
+                                </div><button>
+
+                                    <img src="/icons/UpdateMain/add.svg" alt="" />
+                                </button>
+                            </div>
+                            <div class="flex cursor-pointer items-center gap-4">
+                                <img src="/icons/UpdateMain/acc.svg" alt="" />
+                                <span>Account</span>
+                            </div>
+                            <div class="flex cursor-pointer items-center gap-4">
+                                <img src="/icons/UpdateMain/transaction.svg" alt="" />
+                                <span>Transactions</span>
+                            </div>
+                            <div class="flex cursor-pointer items-center gap-4">
+                                <img src="/icons/UpdateMain/ticket.svg" alt="" />
+                                <span>Tickets</span>
+                            </div>
+
+                            <div class="flex cursor-pointer items-center gap-4">
+                                <img src="/icons/UpdateMain/support-2.svg" alt="" />
+                                <span>Support</span>
+                            </div>
+                            <div class="flex cursor-pointer text-[#EE0035] items-center gap-4">
+                                <img src="/icons/UpdateMain/logout.svg" alt="" />
+                                <span>Log out</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sidebar_menu_icon" class="hidden mobile:block">
+                <img class="h-8 cursor-pointer" src="/icons/main/menu.svg" alt="menu" />
+
+                <div id="sidebar_menu"
+                    class="fixed mobile:hidden left-0 top-0 w-[100vw] h-[100vh] bg-[#0000004D] backdrop-blur-[0.125rem] z-[100]">
+                    <div
+                        class="w-[21.25rem] h-full bg-white rtl:rounded-l-[2rem] ltr:rounded-r-[2rem] flex flex-col justify-between">
+                        <div>
+                            <div
+                                class="mt-8 flex gap-4 items-center text-lg px-6 justify-between text-[2.15rem] font-bold text-[#1C0E07]">
+                                <img class="h-8 cursor-pointer" src="/images/UpdateMain/logo.svg" alt="search">
+                                <img class="h-8 cursor-pointer" src="/icons/main/close.svg" alt="close" />
+                            </div>
+                            <ul class="mt-10 text-xl text-[#5B4A42] px-6 space-y-3">
+                                <li
+                                    class="text-crs-first bg-crs-active h-14 rounded-[0.75rem] flex gap-4 px-4 items-center cursor-pointer">
+
+                                    Home
+                                </li>
+                                <li class="h-14 rounded-[0.75rem] flex gap-4 px-4 items-center cursor-pointer">
+                                    Contact Us
+                                </li>
+                                <li class="h-14 rounded-[0.75rem] flex gap-4 px-4 items-center cursor-pointer">
+                                    About Us
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="px-6">
+                            <div dir="rtl"
+                                class="flex p-1 mb-16 h-[3rem] bg-[#F7F7F9] rounded-[0.5rem] min-w-[13.25rem] text-[#514037]">
+                                <div
+                                    class="w-1/3 grow cursor-pointer flex items-center justify-center rounded-[0.5rem]">
+                                    فارسی
+                                </div>
+                                <div
+                                    class="w-1/3 grow cursor-pointer flex items-center justify-center rounded-[0.5rem]">
+                                    عربی
+                                </div>
+                                <div
+                                    class="w-1/3 grow cursor-pointer flex items-center justify-center rounded-[0.5rem] text-crs-first bg-white">
+                                    English
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="flex gap-7 mt-5 mb-28 container">
+
+                <!-- @component.profile.sideBar() -->
+            <aside class="h-[54.5rem] overflow-hidden rounded-[0.625rem] relative bg-white w-[20%]">
+                <div class="h-[9.5rem] w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
+                <div class="flex justify-center">
+                    <img src="/icons/UpdateMain/profile.png" alt="..." class="absolute top-24 rounded-full " />
+                </div>
+
+                <div class="flex mt-28 px-5 text-[#1D1B20] justify-center">
+                    <ul class="w-full flex flex-col gap-3">
+                        <li class="flex px-2.5 py-2  w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/profile.svg" alt="..." />
+
+                            <span>
+                                Profile
+                            </span>
+                        </li>
+                        <li class="flex bg-[#FFDAC6] px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
+
+                            <span>
+                                Wallet
+                            </span>
+                        </li>
+                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+
+                            <span>
+                                Tickets
+                            </span>
+                        </li>
+                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+
+                            <span>
+                                Transactions
+                            </span>
+                        </li>
+                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/support-2.svg" alt="..." />
+
+                            <span>
+                                Support
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="absolute flex justify-center w-full bottom-5 text-sm text-[#EE0035]">
+                    خروج از حساب کاربری
+                </button>
+            </aside>
+
+                     <!-- @component.profile.wallet-page() -->
+            <div class="grid grid-cols-2 w-[80%] h-fit gap-5">
+                <div class="bg-white flex flex-col gap-3 rounded-2xl py-6">
+                    <span class="font-bold text-[#1C0E07] text-2xl px-5">
+                        wallet
+                    </span>
+
+                    <div
+                        class="flex flex-col text-white px-5 py-4 gap-2 w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]">
+                        <div class="flex items-center gap-2">
+                            <img src="/icons/UpdateMain/w-wallet.svg" alt="..." />
+                            <span>
+                                charge wallet
+                            </span>
+                        </div>
+                        <span>
+                            12.000.000 IRR
+                        </span>
+                    </div>
+
+                    <div class="flex px-5 flex-col gap-3">
+                        <span class="text-[#1C0E07] font-bold">
+                            افزایش شارژ کیف پول
+                        </span>
+
+                        <p class="text-[#307FF8] text-sm">
+                            برای افزایش شارژ کیف پول روی دکمه زیر کلیک کنید.
+                        </p>
+
+                        <button id="chargeBtn"
+                            class="border py-3 px-10 w-fit items-center rounded-[0.625rem] text-white bg-[#307FF8] flex gap-2">
+                            <img src="/icons/UpdateMain/plus-w.svg" alt="..." />
+                            add charge
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white flex flex-col gap-3 rounded-2xl py-6">
+                    <span class="font-bold text-[#1C0E07] text-2xl px-5">
+                        Validity
+                    </span>
+
+                    <div
+                        class="flex flex-col text-white px-5 py-4 gap-2 w-full bg-gradient-to-r from-[#7fadf3] bg-[#307FF8]">
+                        <div class="flex items-center gap-2">
+                            <img src="/icons/UpdateMain/validity.svg" alt="..." />
+                            <span>
+                                Validity
+                            </span>
+                        </div>
+
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span>
+                                    باقی مانده:
+                                </span>
+                                <span>
+                                    12.000.000 IRR
+                                </span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span>
+                                    اعتبار اولیه:
+                                </span>
+                                <span>
+                                    12.000.000 IRR
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="flex px-5 flex-col gap-3">
+                        <span class="text-[#1C0E07] font-bold">
+                            درخواست افزایش اعتبار
+                        </span>
+
+                        <p class="text-[#307FF8] text-sm">
+                            برای ثبت درخواست افزایش اعتبار با شتیبانی تماس بگیرید.
+                        </p>
+
+                        <div class="flex items-center gap-5">
+                            <span>
+                                شماره پشتیبانی:
+                            </span>
+                            <span>
+                                +964 780 814 3063
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- @component.modal-charge() -->
+        <div id="modal_charge"
+            class="fixed hidden bg-black/50 top-0 z-50 justify-center items-center left-0 w-full h-full">
+            <div
+                class="w-[50rem] inner_modal_charge mobile:w-[30.75rem] flex flex-col z-50 bg-white rounded-xl p-4 gap-3">
+
+                <div class="flex items-center gap-3">
+                    <button id="close_modal_charge">
+                        <img src="/icons/close.svg" alt="">
+                    </button>
+                    <span class="text-2xl font-bold">
+                        Increase the charge of the wallet
+                    </span>
+                </div>
+
+                <div class="grid mt-5 gap-2 grid-cols-2">
+                    <div class="flex flex-col gap-1">
+                        <label for="creadit">Amount of credit increase</label>
+                        <input type="text" id="creadit" value="test"
+                            class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+                    </div>
+
+                    <div class="flex flex-col relative justify-between w-full">
+                        <label for="type">currency type</label>
+                        <select id="type"
+                            class="border-[#DCDFE4] w-full focus:outline-none  rounded mobile:w-full border bg-white text-sm  py-3.5 px-3 appearance-none"
+                            name="type">
+                            <option value=" " selected hidden>USD</option>
+                            <option value="USD">USD</option>
+                        </select>
+                        <img class="absolute right-3 top-11" src="/icons/UpdateMain/arrow.svg" alt="" />
+                    </div>
+
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span class="text-lg font-bold tetx-[#1C0E07]">
+                        درگاه پرداخت:
+                    </span>
+
+                    <div class="flex items-center gap-2">
+                        <input type="radio" name="rial" id="rial" />
+                        <label for="rial">
+                            next pay (ریالی)
+                        </label>
+                    </div>
+                </div>
+
+                <button id="paymentBtn"
+                    class="border py-3 w-fit px-10 items-center rounded-[0.625rem] text-white bg-[#307FF8] flex gap-2">
+                    انتقال به درگاه پرداخت
+                </button>
+            </div>
+        </div>
+
+        <!-- @component.modal-charged() -->
+        <div id="modal_charged"
+        class="fixed hidden bg-black/50 top-0 z-50 justify-center items-center left-0 w-full h-full">
+        <div
+            class="w-[50rem] inner_modal_charged mobile:w-[30.75rem] flex flex-col justify-center items-center z-50 bg-white rounded-xl p-4 gap-3">
+            <img src="/icons/UpdateMain/successfully.svg" alt="" />
+
+            <span class="text-[#1C0E07] font-bold text-2xl">
+                کیف پول با موفقیت شارژ شد.
+            </span>
+
+            <p class="text-[#1C0E07]">
+                مبلغ 12,000,000 ریال به حساب کیف پول شما اضافه شد.
+            </p>
+
+            <button id="close_modal_charged" class="rounded-xl bg-[#307FF8] text-white py-3 px-8">
+                متوحه شدم
+            </button>
+        </div>
+    </div>
+
+        <!-- @component.Footer() -->
+        <footer class="w-full">
+
+            <div class=" bg-crs-footer py-10 mobile:px-7">
+                <div class="flex px-[5rem] mobile:px-0 justify-between mobile:flex-col  lg:max-w-[105rem] lg:mx-auto">
+                    <div>
+                        <img src="/images/UpdateMain/logo.svg" alt="search">
+                        <p class="text-lg leading-[1.875rem] mt-2 text-Black/2">
+                            Where the Journey Begins and Memories are Made.
+                        </p>
+                        <div class="mt-10 mx-2 flex gap-2">
+                            <div class="bg-white rounded-[0.5rem] p-1 cursor-pointer">
+                                <img class="w-12 h-12" src="/icons/search/Instagram.svg" alt="Instagram" />
+                            </div>
+                            <div class="bg-white rounded-[0.5rem] p-1 cursor-pointer">
+                                <img class="w-12 h-12" src="/icons/search/Telegram.svg" alt="Telegram" />
+                            </div>
+                            <div class="bg-white rounded-[0.5rem] p-1 cursor-pointer">
+                                <img class="w-12 h-12" src="/icons/search/Whatsapp.svg" alt="Whatsapp" />
+                            </div>
+                        </div>
+                        <h2 class="font-bold text-crs-first mt-6 px-2">CRSTRIP<span class="text-[#2C160B]">.COM</span>
+                        </h2>
+                    </div>
+                    <div class="flex gap-[5.5rem] pt-4 mobile:my-6 mobile:justify-start justify-center">
+                        <div>
+                            <h4 class="text-2xl leading-[2.5rem] font-bold text-[#2C160B]">Menu</h4>
+                            <ul class="mt-6 space-y-4 text-[#5B4A42] text-xl leading-[1.875rem]">
+                                <li>Services</li>
+                                <li>Support</li>
+                                <li>About us</li>
+                                <li>Contact us</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-2xl leading-[2.5rem] font-bold text-[#2C160B]">Contact Info</h4>
+                            <ul class="mt-6 space-y-4 text-[#5B4A42] text-xl leading-[1.875rem]">
+
+                                <li class="flex items-center gap-2">
+                                    <img class="w-6 h-6" src="/icons/UpdateMain/sms.svg" alt="call" /><span
+                                        dir="ltr">crstrip.com@gmail.com</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img class="w-6 h-6" src="/icons/UpdateMain/call.svg" alt="call" /><span
+                                        dir="ltr">+9647815639914</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <img class="w-6 h-6" src="/icons/UpdateMain/location.svg" alt="location" /><span
+                                        dir="ltr">Najaf - Iraq</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div dir="ltr"
+                class="px-6 bg-white h-[4.5rem] flex items-center justify-center gap-2 text-sm text-[#2C160B]">
+                <img class="w-6 h-6" src="/icons/search/rights.svg" alt="rights" /><span class="pt-1.5">
+                    All rights to these services (website and mobile application) are reserved and owned by CRS
+                    Trip</span>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

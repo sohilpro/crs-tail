@@ -1,0 +1,52 @@
+<div id="modal_charge"
+            class="fixed hidden bg-black/50 top-0 z-50 justify-center items-center left-0 w-full h-full">
+            <div
+                class="w-[50rem] inner_modal_charge mobile:w-[30.75rem] flex flex-col z-50 bg-white rounded-xl p-4 gap-3">
+
+                <div class="flex items-center gap-3">
+                    <button id="close_modal_charge">
+                        <img src="/icons/close.svg" alt="">
+                    </button>
+                    <span class="text-2xl font-bold">
+                        Increase the charge of the wallet
+                    </span>
+                </div>
+
+                <div class="grid mt-5 gap-2 grid-cols-2">
+                    <div class="flex flex-col gap-1">
+                        <label for="creadit">Amount of credit increase</label>
+                        <input type="text" id="creadit" value="test"
+                            class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+                    </div>
+
+                    <div class="flex flex-col relative justify-between w-full">
+                        <label for="type">currency type</label>
+                        <select id="type"
+                            class="border-[#DCDFE4] w-full focus:outline-none  rounded mobile:w-full border bg-white text-sm  py-3.5 px-3 appearance-none"
+                            name="type">
+                            <option value=" " selected hidden>USD</option>
+                            <option value="USD">USD</option>
+                        </select>
+                        <img class="absolute right-3 top-11" src="/icons/UpdateMain/arrow.svg" alt="" />
+                    </div>
+
+                </div>
+                <div class="flex flex-col gap-2">
+                    <span class="text-lg font-bold tetx-[#1C0E07]">
+                        درگاه پرداخت:
+                    </span>
+
+                    <div class="flex items-center gap-2">
+                        <input type="radio" name="rial" id="rial" />
+                        <label for="rial">
+                            next pay (ریالی)
+                        </label>
+                    </div>
+                </div>
+
+                <button id="paymentBtn"
+                    class="border py-3 w-fit px-10 items-center rounded-[0.625rem] text-white bg-[#307FF8] flex gap-2">
+                    انتقال به درگاه پرداخت
+                </button>
+            </div>
+        </div>
