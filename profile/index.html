@@ -146,9 +146,66 @@
             </div>
         </nav>
 
-        <div class="flex gap-7 mt-5 mb-28 container">
+        <div class="flex flex-col lg:flex-row gap-7 mt-5 mb-28 container">
+            <!-- @component.profile.sideBar-mobile() -->
+            <aside class="overflow-hidden lg:hidden rounded-[0.625rem] relative pb-5 bg-white w-full">
+                <div class="h-[9.5rem] w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
+                <div class="flex justify-center">
+                    <img src="/icons/UpdateMain/profile.png" alt="..." class="absolute top-24 rounded-full " />
+                </div>
 
-            <aside class="h-[54.5rem] overflow-hidden rounded-[0.625rem] relative bg-white w-[20%]">
+                <div class="flex mt-28 px-5 text-[#1D1B20] justify-center">
+                    <ul class="w-full grid grid-cols-5 justify-center gap-3">
+                        <li>
+
+                            <a href="/profile/index.html"
+                                class="flex px-2.5 py-2 flex-col w-full bg-[#FFDAC6] rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile.svg" alt="..." />
+
+                                <span>
+                                    Profile
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="/profile/wallet.html"
+                                class="flex px-2.5 py-2 w-full flex-col ] rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
+
+                                <span>
+                                    Wallet
+                                </span>
+                            </a>
+                        </li>
+                        <li class="flex flex-col px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+
+                            <span>
+                                Tickets
+                            </span>
+                        </li>
+                        <li class="flex px-2.5 flex-col py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+
+                            <span>
+                                Transactions
+                            </span>
+                        </li>
+                        <li class="flex flex-col px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/support-2.svg" alt="..." />
+
+                            <span>
+                                Support
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+
+            </aside>
+
+            <aside class="h-[54.5rem] mobile:hidden overflow-hidden rounded-[0.625rem] relative bg-white w-[20%]">
                 <div class="h-[9.5rem] w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
                 <div class="flex justify-center">
                     <img src="/icons/UpdateMain/profile.png" alt="..." class="absolute top-24 rounded-full " />
@@ -156,19 +213,27 @@
 
                 <div class="flex mt-28 px-5 text-[#1D1B20] justify-center">
                     <ul class="w-full flex flex-col gap-3">
-                        <li class="flex px-2.5 py-2 bg-[#FFDAC6] w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/profile.svg" alt="..." />
+                        <li>
 
-                            <span>
-                                Profile
-                            </span>
+                            <a href="/profile/index.html"
+                                class="flex px-2.5 py-2 bg-[#FFDAC6] w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile.svg" alt="..." />
+
+                                <span>
+                                    Profile
+                                </span>
+                            </a>
                         </li>
-                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
+                        <li>
 
-                            <span>
-                                Wallet
-                            </span>
+                            <a href="/profile/wallet.html"
+                                class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
+
+                                <span>
+                                    Wallet
+                                </span>
+                            </a>
                         </li>
                         <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
                             <img src="/icons/UpdateMain/ticket.svg" alt="..." />
@@ -200,7 +265,7 @@
             </aside>
 
             <!-- @component.profile.index-page-modal() -->
-            <main id="info" class="flex flex-col gap-5 w-[80%] h-[49.125rem]">
+            <main id="info" class="flex flex-col gap-5 lg:w-[80%] lg:h-[49.125rem]">
                 <div class="bg-white p-6 flex flex-col rounded-xl gap-10 h-[65%] w-full">
                     <div class="flex justify-between items-center">
                         <span class="font-bold text-[#1D1B20] text-2xl">
@@ -208,14 +273,14 @@
                         </span>
 
                         <button id="edit_info_btn"
-                            class="border py-2 px-3 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
+                            class="border mobile:hidden py-2 px-3 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
                             edit
 
                             <img src="/icons/UpdateMain/edit-b.svg" alt="..." />
                         </button>
                     </div>
 
-                    <div class="w-1/2">
+                    <div class="lg:w-1/2">
 
                         <main class="grid gap-5 items-center text-[#605D64] grid-cols-2">
                             <span>
@@ -259,23 +324,30 @@
                             <div class="text-[#1D1B20]">11/3/1401 </div>
                         </main>
                     </div>
+
+                    <button id="edit_info_btn"
+                        class="border lg:hidden py-2 justify-center px-3 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
+                        edit
+
+                        <img src="/icons/UpdateMain/edit-b.svg" alt="..." />
+                    </button>
                 </div>
 
-                <div class="bg-white p-6 flex flex-col rounded-xl gap-10 h-[35%] w-full">
+                <div class="bg-white p-6 flex flex-col rounded-xl gap-10 lg:h-[35%] w-full">
                     <div class="flex justify-between items-center">
                         <span class="font-bold text-[#1D1B20] text-2xl">
                             Bank account information
                         </span>
 
                         <button id="edit_info_btn"
-                            class="border py-2 px-3 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
+                            class="border mobile:hidden py-2 px-3 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
                             edit
 
                             <img src="/icons/UpdateMain/edit-b.svg" alt="..." />
                         </button>
                     </div>
 
-                    <div class="w-1/2">
+                    <div class="lg:w-1/2">
 
                         <main class="grid gap-5 items-center text-[#605D64] grid-cols-2">
                             <span>
@@ -294,11 +366,17 @@
                             <div class="text-[#1D1B20]">IR-5652136000000098658746</div>
                         </main>
                     </div>
+                    <button id="edit_info_btn"
+                        class="border lg:hidden py-2 justify-center px-3 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
+                        edit
+
+                        <img src="/icons/UpdateMain/edit-b.svg" alt="..." />
+                    </button>
                 </div>
             </main>
 
             <!-- @component.profile.index-page-edit-modal() -->
-            <main id="edit_info" class="hidden flex-col gap-8 w-[80%] h-[49.125rem] bg-white p-6 rounded-xl">
+            <main id="edit_info" class="hidden flex-col gap-8 lg:w-[80%] lg:h-[49.125rem] bg-white p-6 rounded-xl">
                 <div class="flex items-center gap-2">
                     <img id="cancel_edit_info" src="/icons/UpdateMain/arrow-back.svg"
                         class="ltr:rotate-180 cursor-pointer" alt="..." />
@@ -308,7 +386,7 @@
                     </span>
                 </div>
 
-                <div class="grid gap-x-2 gap-y-5 grid-cols-3">
+                <div class="grid gap-x-2 gap-y-5 grid-cols-1 lg:grid-cols-3">
                     <div class="flex flex-col gap-1">
                         <label for="username">username</label>
                         <input type="text" id="username" value="test"
@@ -369,7 +447,7 @@
                     </div>
                 </div>
 
-                <div class="border h-36 w-[19.813rem] border-[#DCDFE4] rounded-xl relative">
+                <div class="border h-36 lg:w-[19.813rem] border-[#DCDFE4] rounded-xl relative">
                     <span class="bg-white absolute top-0 left-4 -translate-y-3">logo</span>
                 </div>
 
@@ -381,7 +459,7 @@
                     <div class="flex flex-col gap-1">
                         <label for="new_password">New password</label>
 
-                        <div class="flex justify-between border-[#DCDFE4] border w-1/2 rounded py-3.5 px-3">
+                        <div class="flex justify-between border-[#DCDFE4] border lg:w-1/2 rounded py-3.5 px-3">
                             <input id="input_password" type="password" placeholder="password..."
                                 class="outline-none w-full" />
                             <div id="container_show_password">
@@ -396,7 +474,7 @@
                     <span class="font-bold text-xl">
                         Edit bank account information
                     </span>
-                    <div class="grid grid-cols-2 gap-2">
+                    <div class="grid lg:grid-cols-2 gap-2">
                         <div class="flex flex-col gap-1">
                             <label for="acc_numb">account number</label>
                             <input type="text" id="acc_numb" value="test"
@@ -413,11 +491,11 @@
 
                 <div class="flex gap-2 items-center">
                     <button id="save_change_info"
-                        class="border py-3 px-10 items-center rounded-[0.625rem] text-white bg-[#307FF8] flex gap-2">
+                        class="border mobile:w-full justify-center py-3 px-10 items-center rounded-[0.625rem] text-white bg-[#307FF8] flex gap-2">
                         save changes
                     </button>
                     <button id="cancel_edit_info"
-                        class="border py-3 px-10 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
+                        class="border mobile:w-full justify-center py-3 px-10 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
                         cancel
                     </button>
                 </div>

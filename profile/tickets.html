@@ -159,7 +159,7 @@
                         <li>
 
                             <a href="/profile/index.html"
-                                class="flex px-2.5 py-2 flex-col w-full rounded-lg items-center gap-2">
+                                class="flex px-2.5 py-2 flex-col w-full bg-[#FFDAC6] rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile.svg" alt="..." />
 
                                 <span>
@@ -170,7 +170,7 @@
                         <li>
 
                             <a href="/profile/wallet.html"
-                                class="flex px-2.5 py-2 w-full flex-col bg-[#FFDAC6] rounded-lg items-center gap-2">
+                                class="flex px-2.5 py-2 w-full flex-col ] rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
 
                                 <span>
@@ -205,8 +205,6 @@
 
             </aside>
 
-
-            <!-- @component.profile.sideBar() -->
             <aside class="h-[54.5rem] mobile:hidden overflow-hidden rounded-[0.625rem] relative bg-white w-[20%]">
                 <div class="h-[9.5rem] w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
                 <div class="flex justify-center">
@@ -218,7 +216,7 @@
                         <li>
 
                             <a href="/profile/index.html"
-                                class="flex px-2.5 py-2  w-full rounded-lg items-center gap-2">
+                                class="flex px-2.5 py-2 bg-[#FFDAC6] w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile.svg" alt="..." />
 
                                 <span>
@@ -229,7 +227,7 @@
                         <li>
 
                             <a href="/profile/wallet.html"
-                                class="flex px-2.5 py-2 w-full bg-[#FFDAC6] rounded-lg items-center gap-2">
+                                class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
 
                                 <span>
@@ -266,173 +264,158 @@
                 </button>
             </aside>
 
-            <!-- @component.profile.wallet-page() -->
-            <div class="grid mobile:grid-cols-1 grid-cols-2 w-full lg:w-[80%] h-fit gap-5">
-                <div class="bg-white flex flex-col gap-3 rounded-2xl py-6">
-                    <span class="font-bold text-[#1C0E07] text-2xl px-5">
-                        wallet
+            <!-- @component.profile.transaction-index() -->
+            <main id="info" class="flex flex-col gap-5 lg:w-[80%] lg:h-[49.125rem]">
+                <div class="bg-white mobile:hidden p-6 flex flex-col rounded-xl gap-10 h-[25%] w-full">
+                    <span class="font-bold text-[#1D1B20] text-2xl">
+                        Search Tickets
                     </span>
 
-                    <div
-                        class="flex flex-col text-white px-5 py-4 gap-2 w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]">
-                        <div class="flex items-center gap-2">
-                            <img src="/icons/UpdateMain/w-wallet.svg" alt="..." />
-                            <span>
-                                charge wallet
-                            </span>
+
+                    <div class="flex items-end w-full gap-3 text-[#605D64]">
+                        <div class="flex w-full flex-col gap-1">
+                            <label class="text-xs" for="trans_num">
+                                شماره سفارش
+                            </label>
+
+                            <input type="text" class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                placeholder="شماره سفارش را وارد کنید" />
                         </div>
-                        <span>
-                            12.000.000 IRR
-                        </span>
-                    </div>
+                        <div class="flex w-full flex-col gap-1">
+                            <label class="text-xs" for="trans_num">
+                                شماره پاسپورت
+                            </label>
 
-                    <div class="flex px-5 flex-col gap-3">
-                        <span class="text-[#1C0E07] font-bold">
-                            افزایش شارژ کیف پول
-                        </span>
+                            <input type="text" class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                placeholder="شماره پاسپورت را وارد کنید" />
+                        </div>
 
-                        <p class="text-[#307FF8] text-sm">
-                            برای افزایش شارژ کیف پول روی دکمه زیر کلیک کنید.
-                        </p>
+                        <div class="grid w-full grid-cols-2 items-center gap-2">
+                            <div class="flex flex-col gap-1">
+                                <label class="text-xs" for="trans_num">
+                                    date (to)
+                                </label>
 
-                        <button id="chargeBtn"
-                            class="border py-3 px-10 w-fit items-center rounded-[0.625rem] text-white bg-[#307FF8] flex gap-2">
-                            <img src="/icons/UpdateMain/plus-w.svg" alt="..." />
-                            add charge
+                                <input id="date_to" type="text"
+                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                    placeholder="از" />
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <label class="text-xs" for="trans_num">
+                                    date (from)
+                                </label>
+
+                                <input id="date_from" type="text"
+                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                    placeholder="تا" />
+                            </div>
+                        </div>
+
+                        <button class="text-[#307FF8] w-fit rounded-md h-fit py-2 px-6 border-[#307FF8] border">
+                            search
                         </button>
                     </div>
                 </div>
 
-                <div class="bg-white flex flex-col gap-3 rounded-2xl py-6">
-                    <span class="font-bold text-[#1C0E07] text-2xl px-5">
-                        Validity
-                    </span>
 
-                    <div
-                        class="flex flex-col text-white px-5 py-4 gap-2 w-full bg-gradient-to-r from-[#7fadf3] bg-[#307FF8]">
-                        <div class="flex items-center gap-2">
-                            <img src="/icons/UpdateMain/validity.svg" alt="..." />
-                            <span>
-                                Validity
-                            </span>
-                        </div>
-
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-center gap-2">
-                                <span>
-                                    باقی مانده:
-                                </span>
-                                <span>
-                                    12.000.000 IRR
-                                </span>
-                            </div>
-                            <div class="flex items-center gap-2">
-                                <span>
-                                    اعتبار اولیه:
-                                </span>
-                                <span>
-                                    12.000.000 IRR
-                                </span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="flex px-5 flex-col gap-3">
-                        <span class="text-[#1C0E07] font-bold">
-                            درخواست افزایش اعتبار
-                        </span>
-
-                        <p class="text-[#307FF8] text-sm">
-                            برای ثبت درخواست افزایش اعتبار با شتیبانی تماس بگیرید.
-                        </p>
-
+                <div class=" mx-auto bg-white  flex border flex-col rounded-xl gap-5 w-full">
+                    <div class="flex justify-between px-6 pt-4 items-center">
+                        <h6 class="font-semibold">Tickets</h6>
                         <div class="flex items-center gap-5">
-                            <span>
-                                شماره پشتیبانی:
-                            </span>
-                            <span>
-                                +964 780 814 3063
-                            </span>
+
+                            <div class="flex gap-2 items-center"><img src="/icons/UpdateMain/export.svg"
+                                    alt="..." /><span>خروجی</span></div>
+                            <span>5 سند</span>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
+                    <div class="overflow-auto">
 
-        <!-- @component.modal-charge() -->
-        <div id="modal_charge"
-            class="fixed hidden bg-black/50 top-0 z-50 justify-center items-center left-0 w-full h-full">
-            <div
-                class="w-[50rem] inner_modal_charge mobile:w-[30.75rem] flex flex-col z-50 bg-white rounded-xl p-4 gap-3">
+                        <table class="table-auto border-collapse rounded-b-lg border w-full">
+                            <thead class="text-[14px] uppercase">
+                                <tr class="bg-[#FFCEB5] text-[#605D64]">
+                                    <th class="p-2 whitespace-nowrap border">
+                                        <div class="text-start"></div>
+                                    </th>
+                                    <th class="p-2 whitespace-nowrap border">
 
-                <div class="flex items-center gap-3">
-                    <button id="close_modal_charge">
-                        <img src="/icons/close.svg" alt="">
-                    </button>
-                    <span class="text-2xl font-bold">
-                        Increase the charge of the wallet
-                    </span>
-                </div>
+                                    </th>
 
-                <div class="grid mt-5 gap-2 grid-cols-2">
-                    <div class="flex flex-col gap-1">
-                        <label for="creadit">Amount of credit increase</label>
-                        <input type="text" id="creadit" value="test"
-                            class="outline-none border-[#DCDFE4] border rounded py-3.5 px-3" />
+                                    <th class="p-2 whitespace-nowrap border">
+                                        <div class="text-start">ایرلاین</div>
+                                    </th>
+                                    <th class="p-2 whitespace-nowrap border">
+                                        <div class="text-start">شماره سفارش</div>
+                                    </th>
+                                    <th class="p-2 whitespace-nowrap border">
+                                        <div class="text-start">نوع سفارش</div>
+                                    </th>
+                                    <th class="p-2 whitespace-nowrap border">
+                                        <div class="text-start">مسیر</div>
+                                    </th>
+                                    <th class="p-2 whitespace-nowrap border">
+                                        <div class="text-start">تاریخ و ساعت رزرو</div>
+                                    </th>
+                                    <th class="p-2 whitespace-nowrap border">
+                                        <div class="text-start">تاریخ و ساعت پرواز</div>
+                                    </th>
+                                    <th class="p-2 whitespace-nowrap border">
+                                        <div class="text-start">قیمت کل (ریال)</div>
+                                    </th>
+                                    <th class="p-2 whitespace-nowrap border">
+                                        <div class="text-start">توضیحات</div>
+                                    </th>
+                                    <th class="p-2 whitespace-nowrap border">
+                                        <div class="text-start">وضعیت</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-sm w-full"><!--[-->
+                                <tr
+                                    class="hover:bg-gray-100 text-xs text-[#605D64] transition-all border hover:transition-all">
+                                    <td class="px-2 border py-4 whitespace-nowrap">
+                                        <div class="flex justify-center items-center"><label
+                                                class="relative flex items-center rounded-full cursor-pointer"
+                                                htmlfor="checkbox"><!-- before:h-12 before:w-12 --><input
+                                                    type="checkbox"
+                                                    class="before:content[''] peer relative h-6 w-6 cursor-pointer appearance-none rounded-md border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full bg-[#F0F1F2] before:bg-gray-500 before:opacity-0 before:transition-opacity checked:border-[#0A77FF] checked:bg-[#0A77FF] checked:before:bg-[#0A77FF] hover:before:opacity-10"
+                                                    id="checkbox"><span
+                                                    class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5"
+                                                        viewBox="0 0 20 20" fill="currentColor" stroke="currentColor"
+                                                        stroke-width="1">
+                                                        <path fill-rule="evenodd"
+                                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg></span></label></div>
+                                    </td>
+                                    <td
+                                        class="px-2 py-4 border flex justify-center text-black whitespace-nowrap bg-gray-200">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem"
+                                            viewBox="0 0 48 48">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2.05" d="M36 18L24 30L12 18" />
+                                        </svg>
+                                    </td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">Iran Air</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">64538</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">یک طرفه</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">مشهد به نجف</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">12,000,000</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">متن توضیح</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap text-[#2AB930] font-medium">پرداخت شده
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-
-                    <div class="flex flex-col relative justify-between w-full">
-                        <label for="type">currency type</label>
-                        <select id="type"
-                            class="border-[#DCDFE4] w-full focus:outline-none  rounded mobile:w-full border bg-white text-sm  py-3.5 px-3 appearance-none"
-                            name="type">
-                            <option value=" " selected hidden>USD</option>
-                            <option value="USD">USD</option>
-                        </select>
-                        <img class="absolute right-3 top-11" src="/icons/UpdateMain/arrow.svg" alt="" />
-                    </div>
-
                 </div>
-                <div class="flex flex-col gap-2">
-                    <span class="text-lg font-bold tetx-[#1C0E07]">
-                        درگاه پرداخت:
-                    </span>
+            </main>
 
-                    <div class="flex items-center gap-2">
-                        <input type="radio" name="rial" id="rial" />
-                        <label for="rial">
-                            next pay (ریالی)
-                        </label>
-                    </div>
-                </div>
 
-                <button id="paymentBtn"
-                    class="border py-3 w-fit px-10 items-center rounded-[0.625rem] text-white bg-[#307FF8] flex gap-2">
-                    انتقال به درگاه پرداخت
-                </button>
-            </div>
-        </div>
-
-        <!-- @component.modal-charged() -->
-        <div id="modal_charged"
-            class="fixed hidden bg-black/50 top-0 z-50 justify-center items-center left-0 w-full h-full">
-            <div
-                class="w-[50rem] inner_modal_charged mobile:w-[30.75rem] flex flex-col justify-center items-center z-50 bg-white rounded-xl p-4 gap-3">
-                <img src="/icons/UpdateMain/successfully.svg" alt="" />
-
-                <span class="text-[#1C0E07] font-bold text-2xl">
-                    کیف پول با موفقیت شارژ شد.
-                </span>
-
-                <p class="text-[#1C0E07]">
-                    مبلغ 12,000,000 ریال به حساب کیف پول شما اضافه شد.
-                </p>
-
-                <button id="close_modal_charged" class="rounded-xl bg-[#307FF8] text-white py-3 px-8">
-                    متوحه شدم
-                </button>
-            </div>
         </div>
 
         <!-- @component.Footer() -->

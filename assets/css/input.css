@@ -141,3 +141,7 @@ body {
   animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) 5;
   animation-fill-mode: none;
 }
+
+input {
+  @apply outline-none focus:outline-none;
+}

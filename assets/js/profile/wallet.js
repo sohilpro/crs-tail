@@ -13,24 +13,24 @@ const handleHide = (elment) => {
   elment.classList.remove("flex");
 };
 
-chargeModal.addEventListener("click", (event) => {
+chargeModal?.addEventListener("click", (event) => {
   if (!event.target.closest(".inner_modal_charge")) {
     handleHide(chargeModal);
   }
 });
-chargedModal.addEventListener("click", (event) => {
+chargedModal?.addEventListener("click", (event) => {
   if (!event.target.closest(".inner_modal_charged")) {
     handleHide(chargedModal);
   }
 });
 
-chargeBtn.addEventListener("click", () => handleShow(chargeModal));
-closeChargedModal.addEventListener("click", () => {
+chargeBtn?.addEventListener("click", () => handleShow(chargeModal));
+closeChargedModal?.addEventListener("click", () => {
   handleHide(chargeModal);
   handleHide(chargedModal);
 });
 
-paymentBtn.addEventListener("click", () => {
+paymentBtn?.addEventListener("click", () => {
   handleHide(chargeModal);
   setTimeout(() => {
     handleShow(chargedModal);
