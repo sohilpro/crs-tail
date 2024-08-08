@@ -19,21 +19,21 @@ const handleHide = (elment) => {
   elment.classList.remove("flex");
 };
 
-editInfoBtn.forEach((element) => {
+editInfoBtn?.forEach((element) => {
   element.addEventListener("click", () => {
     handleShow(editInfo);
     handleHide(info);
   });
 });
 
-cancelEditInfoBtn.forEach((element) => {
+cancelEditInfoBtn?.forEach((element) => {
   element.addEventListener("click", () => {
     handleShow(info);
     handleHide(editInfo);
   });
 });
 
-editInfoSave.addEventListener("click", () => {
+editInfoSave?.addEventListener("click", () => {
   handleShow(info);
   handleHide(editInfo);
 });

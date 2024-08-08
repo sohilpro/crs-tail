@@ -149,12 +149,12 @@
         <div class="flex flex-col lg:flex-row gap-7 mt-5 mb-28 container">
             <!-- @component.profile.sideBar-mobile() -->
             <aside class="overflow-hidden lg:hidden rounded-[0.625rem] relative pb-5 bg-white w-full">
-                <div class="h-[9.5rem] w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
+                <div class="h-24 w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
                 <div class="flex justify-center">
-                    <img src="/icons/UpdateMain/profile.png" alt="..." class="absolute top-24 rounded-full " />
+                    <img src="/icons/UpdateMain/profile.png" alt="..." class="absolute top-12 w-24 h-24 rounded-full " />
                 </div>
 
-                <div class="flex mt-28 px-5 text-[#1D1B20] justify-center">
+                <div class="flex mt-16 px-5 text-[#1D1B20] justify-center">
                     <ul class="w-full grid grid-cols-5 justify-center gap-3">
                         <li>
 
@@ -318,6 +318,61 @@
                     </div>
                 </div>
 
+                <div class="flex flex-col lg:hidden bg-white px-5 rounded-xl">
+                    <div id="mobile_search_show_tickets"
+                        class="cursor-pointer flex justify-between items-center h-16  lg:hidden">
+                        <span>
+                            جستجو بلیط
+                        </span>
+
+                        <img src="/icons/UpdateMain/arrow.svg" alt="..." />
+                    </div>
+
+                    <div id="mobile_search_tickets" class=" flex-col pb-5 w-full hidden gap-3 text-[#605D64]">
+                        <div class="flex w-full flex-col gap-1">
+                            <label class="text-xs" for="trans_num">
+                                شماره سفارش
+                            </label>
+
+                            <input type="text" class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                placeholder="شماره سفارش را وارد کنید" />
+                        </div>
+                        <div class="flex w-full flex-col gap-1">
+                            <label class="text-xs" for="trans_num">
+                                شماره پاسپورت
+                            </label>
+
+                            <input type="text" class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                placeholder="شماره پاسپورت را وارد کنید" />
+                        </div>
+
+                        <div class="grid w-full grid-cols-1 items-center gap-2">
+                            <div class="flex flex-col gap-1">
+                                <label class="text-xs" for="trans_num">
+                                    date (to)
+                                </label>
+
+                                <input id="date_to" type="text"
+                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                    placeholder="از" />
+                            </div>
+
+                            <div class="flex flex-col gap-1">
+                                <label class="text-xs" for="trans_num">
+                                    date (from)
+                                </label>
+
+                                <input id="date_from" type="text"
+                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                    placeholder="تا" />
+                            </div>
+                        </div>
+
+                        <button class="text-[#307FF8] w-full rounded-md h-fit py-2 px-6 border-[#307FF8] border">
+                            search
+                        </button>
+                    </div>
+                </div>
 
                 <div class=" mx-auto bg-white  flex border flex-col rounded-xl gap-5 w-full">
                     <div class="flex justify-between px-6 pt-4 items-center">

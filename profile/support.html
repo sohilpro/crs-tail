@@ -148,63 +148,63 @@
 
         <div class="flex flex-col lg:flex-row gap-7 mt-5 mb-28 container">
             <!-- @component.profile.sideBar-mobile() -->
-         <!-- @component.profile.sideBar-mobile() -->
-         <aside class="overflow-hidden lg:hidden rounded-[0.625rem] relative pb-5 bg-white w-full">
-            <div class="h-24 w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
-            <div class="flex justify-center">
-                <img src="/icons/UpdateMain/profile.png" alt="..." class="absolute top-12 w-24 h-24 rounded-full " />
-            </div>
+            <aside class="overflow-hidden lg:hidden rounded-[0.625rem] relative pb-5 bg-white w-full">
+                <div class="h-24 w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
+                <div class="flex justify-center">
+                    <img src="/icons/UpdateMain/profile.png" alt="..."
+                        class="absolute top-12 w-24 h-24 rounded-full " />
+                </div>
 
-            <div class="flex mt-16 px-5 text-[#1D1B20] justify-center">
-                <ul class="w-full grid grid-cols-5 justify-center gap-3">
-                    <li>
+                <div class="flex mt-16 px-5 text-[#1D1B20] justify-center">
+                    <ul class="w-full grid grid-cols-5 justify-center gap-3">
+                        <li>
 
-                        <a href="/profile/index.html"
-                            class="flex px-2.5 py-2 flex-col w-full bg-[#FFDAC6] rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/profile.svg" alt="..." />
+                            <a href="/profile/index.html"
+                                class="flex px-2.5 py-2 flex-col w-full bg-[#FFDAC6] rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile.svg" alt="..." />
+
+                                <span>
+                                    Profile
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+
+                            <a href="/profile/wallet.html"
+                                class="flex px-2.5 py-2 w-full flex-col ] rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
+
+                                <span>
+                                    Wallet
+                                </span>
+                            </a>
+                        </li>
+                        <li class="flex flex-col px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/ticket.svg" alt="..." />
 
                             <span>
-                                Profile
+                                Tickets
                             </span>
-                        </a>
-                    </li>
-                    <li>
-
-                        <a href="/profile/wallet.html"
-                            class="flex px-2.5 py-2 w-full flex-col ] rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
+                        </li>
+                        <li class="flex px-2.5 flex-col py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
 
                             <span>
-                                Wallet
+                                Transactions
                             </span>
-                        </a>
-                    </li>
-                    <li class="flex flex-col px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                        <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+                        </li>
+                        <li class="flex flex-col px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <img src="/icons/UpdateMain/support-2.svg" alt="..." />
 
-                        <span>
-                            Tickets
-                        </span>
-                    </li>
-                    <li class="flex px-2.5 flex-col py-2 w-full rounded-lg items-center gap-2">
-                        <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
-
-                        <span>
-                            Transactions
-                        </span>
-                    </li>
-                    <li class="flex flex-col px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                        <img src="/icons/UpdateMain/support-2.svg" alt="..." />
-
-                        <span>
-                            Support
-                        </span>
-                    </li>
-                </ul>
-            </div>
+                            <span>
+                                Support
+                            </span>
+                        </li>
+                    </ul>
+                </div>
 
 
-        </aside>
+            </aside>
 
             <aside class="h-[54.5rem] mobile:hidden overflow-hidden rounded-[0.625rem] relative bg-white w-[20%]">
                 <div class="h-[9.5rem] w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
@@ -269,63 +269,47 @@
             <main id="info" class="flex flex-col gap-5 lg:w-[80%] lg:h-[49.125rem]">
                 <div class="bg-white mobile:hidden p-6 flex flex-col rounded-xl gap-10 h-[25%] w-full">
                     <span class="font-bold text-[#1D1B20] text-2xl">
-                        Search Transactions
+                        پشتیبانی
                     </span>
 
 
                     <div class="flex items-end w-full gap-3 text-[#605D64]">
                         <div class="flex w-full flex-col gap-1">
                             <label class="text-xs" for="trans_num">
-                                Transaction number
+                                عنوان تیکت
                             </label>
 
                             <input type="text" class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
                                 placeholder="شماره سفارش را وارد کنید" />
                         </div>
+                        <div class="flex w-full flex-col gap-1">
+                            <label class="text-xs" for="trans_num">
+                                کد پیگیری
+                            </label>
 
-                        <div class="grid w-full grid-cols-2 items-center gap-2">
-                            <div class="flex flex-col gap-1">
-                                <label class="text-xs" for="trans_num">
-                                    date (to)
-                                </label>
-
-                                <input id="date_to" type="text"
-                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
-                                    placeholder="از" />
-                            </div>
-
-                            <div class="flex flex-col gap-1">
-                                <label class="text-xs" for="trans_num">
-                                    date (from)
-                                </label>
-
-                                <input id="date_from" type="text"
-                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
-                                    placeholder="تا" />
-                            </div>
+                            <input type="text" class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                placeholder="شماره پاسپورت را وارد کنید" />
                         </div>
 
-                        <div class="grid w-full grid-cols-2 items-center gap-2">
-                            <div class="flex flex-col gap-1">
-                                <label id="price_to" class="text-xs" for="trans_num">
-                                    price (to)
-                                </label>
 
-                                <input id="price_to" type="text"
-                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
-                                    placeholder="از" />
-                            </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="text-xs" for="trans_num">
+                                تاریخ ثبت (از)
+                            </label>
 
-                            <div class="flex flex-col gap-1">
-                                <label class="text-xs" for="price_from">
-                                    price (from)
-                                </label>
-
-                                <input type="text" id="price_from"
-                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
-                                    placeholder="تا" />
-                            </div>
+                            <input id="date_to" type="text"
+                                class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3" placeholder="از" />
                         </div>
+
+                        <div class="flex flex-col gap-1">
+                            <label class="text-xs" for="trans_num">
+                                تاریخ ثبت (تا)
+                            </label>
+
+                            <input id="date_from" type="text"
+                                class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3" placeholder="تا" />
+                        </div>
+
 
                         <button class="text-[#307FF8] w-fit rounded-md h-fit py-2 px-6 border-[#307FF8] border">
                             search
@@ -334,22 +318,31 @@
                 </div>
 
                 <div class="flex flex-col lg:hidden bg-white px-5 rounded-xl">
-                    <div id="mobile_search_show_trans" class="cursor-pointer flex justify-between items-center h-16  lg:hidden">
+                    <div id="mobile_search_show_tickets"
+                        class="cursor-pointer flex justify-between items-center h-16  lg:hidden">
                         <span>
-                            جستجو تراکنش
+                            جستجو بلیط
                         </span>
 
                         <img src="/icons/UpdateMain/arrow.svg" alt="..." />
                     </div>
 
-                    <div id="mobile_search_trans" class=" flex-col pb-5 w-full hidden gap-3 text-[#605D64]">
+                    <div id="mobile_search_tickets" class=" flex-col pb-5 w-full hidden gap-3 text-[#605D64]">
                         <div class="flex w-full flex-col gap-1">
                             <label class="text-xs" for="trans_num">
-                                Transaction number
+                                شماره سفارش
                             </label>
 
                             <input type="text" class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
                                 placeholder="شماره سفارش را وارد کنید" />
+                        </div>
+                        <div class="flex w-full flex-col gap-1">
+                            <label class="text-xs" for="trans_num">
+                                شماره پاسپورت
+                            </label>
+
+                            <input type="text" class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
+                                placeholder="شماره پاسپورت را وارد کنید" />
                         </div>
 
                         <div class="grid w-full grid-cols-1 items-center gap-2">
@@ -374,73 +367,51 @@
                             </div>
                         </div>
 
-                        <div class="grid w-full grid-cols-1 items-center gap-2">
-                            <div class="flex flex-col gap-1">
-                                <label id="price_to" class="text-xs" for="trans_num">
-                                    price (to)
-                                </label>
-
-                                <input id="price_to" type="text"
-                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
-                                    placeholder="از" />
-                            </div>
-
-                            <div class="flex flex-col gap-1">
-                                <label class="text-xs" for="price_from">
-                                    price (from)
-                                </label>
-
-                                <input type="text" id="price_from"
-                                    class="border outline-none border-[#DCDFE4] rounded-md py-3.5 px-3"
-                                    placeholder="تا" />
-                            </div>
-                        </div>
-
-                        <button class="text-[#307FF8] rounded-md h-fit py-2 px-6 border-[#307FF8] border">
+                        <button class="text-[#307FF8] w-full rounded-md h-fit py-2 px-6 border-[#307FF8] border">
                             search
                         </button>
                     </div>
                 </div>
 
-                <div class="overflow-x-auto mx-auto bg-white  flex border flex-col rounded-xl gap-5 w-full">
+                <div class=" mx-auto bg-white  flex border flex-col rounded-xl gap-5 w-full">
                     <div class="flex justify-between px-6 pt-4 items-center">
-                        <h6 class="font-semibold">Transactions</h6>
+                        <h6 class="font-semibold">
+                            تیکت های پشتیبانی
+                        </h6>
                         <div class="flex items-center gap-5">
 
                             <div class="flex gap-2 items-center"><img src="/icons/UpdateMain/export.svg"
                                     alt="..." /><span>خروجی</span></div>
                             <span>5 سند</span>
+
+                            <button id="show_new_ticket"
+                                class="text-white bg-[#307FF8] py-2 px-4 rounded-lg flex items-center gap-2">
+                                <img src="/icons/UpdateMain/plus-w.svg" alt="" />
+
+                                تیکت جدید
+                            </button>
                         </div>
                     </div>
-
                     <div class="overflow-auto">
+
                         <table class="table-auto border-collapse rounded-b-lg border w-full">
                             <thead class="text-[14px] uppercase">
                                 <tr class="bg-[#FFCEB5] text-[#605D64]">
-                                    <th class="p-2  whitespace-nowrap border">
+                                    <th class="p-2 whitespace-nowrap border">
                                         <div class="text-start"></div>
                                     </th>
-                                    <th class="p-2  whitespace-nowrap border">
-                                        <div class="text-start"></div>
+                                    <th class="p-2 whitespace-nowrap border">
+
                                     </th>
 
                                     <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">شماره تراکنش</div>
+                                        <div class="text-start">کد پیگیری</div>
+                                    </th>
+                                    <th class="p-2 whitespace-nowrap border">
+                                        <div class="text-start">عنوان تیکت</div>
                                     </th>
                                     <th class="p-2 whitespace-nowrap border">
                                         <div class="text-start">تاریخ و ساعت</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">نوع تراکنش</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">بدهی (ریال)</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">اعتبار (ریال)</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">مانده (ریال)</div>
                                     </th>
                                     <th class="p-2 whitespace-nowrap border">
                                         <div class="text-start">توضیحات</div>
@@ -448,11 +419,14 @@
                                     <th class="p-2 whitespace-nowrap border">
                                         <div class="text-start">وضعیت</div>
                                     </th>
+                                    <th class="p-2 whitespace-nowrap border">
+                                        <div class="text-start"></div>
+                                    </th>
                                 </tr>
                             </thead>
-                            <tbody class="text-sm"><!--[-->
+                            <tbody class="text-sm w-full"><!--[-->
                                 <tr
-                                    class="hover:bg-gray-100 text-ss text-[#605D64] transition-all border hover:transition-all">
+                                    class="hover:bg-gray-100 text-xs text-[#605D64] transition-all border hover:transition-all">
                                     <td class="px-2 border py-4 whitespace-nowrap">
                                         <div class="flex justify-center items-center"><label
                                                 class="relative flex items-center rounded-full cursor-pointer"
@@ -478,13 +452,21 @@
                                         </svg>
                                     </td>
                                     <td class="px-2 border py-4 whitespace-nowrap">64538</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30</td>
                                     <td class="px-2 border py-4 whitespace-nowrap">بلیط</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap">12,000,000</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap">12,000,000</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap">12,000,000</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30</td>
                                     <td class="px-2 border py-4 whitespace-nowrap">متن توضیح</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap text-[#2AB930] font-medium">پرداخت شده
+                                    <td class="px-2 border py-4 whitespace-nowrap text-[#2AB930] font-medium">پاسخ داده
+                                        شده
+                                    <td class="px-2 border py-4 whitespace-nowrap text-[#307FF8]">
+                                        <div class="flex items-center gap-2">
+                                            <span>
+                                                مشاهده
+                                            </span>
+                                            <img src="/icons/UpdateMain/arrow-left-b.svg" class="ltr:rotate-180"
+                                                alt="" />
+                                        </div>
+
+                                    </td>
                                     </td>
 
                                 </tr>
@@ -495,6 +477,168 @@
             </main>
 
 
+        </div>
+
+        <div id="new-ticket"
+            class="fixed hidden bg-black/50 top-0 z-40 justify-center items-center left-0 w-full h-full">
+
+            <div
+                class="w-[47.875rem] inner-modal-ticket-new bg-white rounded-[1rem] flex flex-col gap-5 p-4 mobile:max-w-full mobile:rounded-none">
+                <div class="flex gap-2">
+                    <img class="w-8 h-8 m-1 cursor-pointer" id="close-new-ticket" src="/icons/results/close.svg"
+                        alt="close">
+                    <h3 class="text-2xl font-bold text-[#1C0E07] pt-0.5">تیکت جدید</h3>
+
+                </div>
+
+                <div class="grid grid-cols-3 gap-2">
+                    <div class="relative flex flex-col gap-1 mobile:w-full">
+                        <label for="comm" class="text-[#605D64] text-xs">
+                            خدمت مورد نظر
+                        </label>
+                        <select id="gender"
+                            class="border-[#E1E2E4] rounded focus:outline-none mobile:w-full border-[0.125rem] bg-white py-3.5 px-3 focus:border-[#307FF8] appearance-none"
+                            name="comm">
+                            <option value=" " selected hidden>پرواز خارجی</option>
+                        </select>
+
+
+                        <img class="absolute right-3 top-9" src="/icons/UpdateMain/arrow.svg" alt="" />
+                    </div>
+                    <div class="relative flex flex-col gap-1 mobile:w-full">
+                        <label for="ctaegory" class="text-[#605D64] text-xs">
+                            دسته بندی
+                        </label>
+                        <select id="ctaegory"
+                            class="border-[#E1E2E4] rounded focus:outline-none mobile:w-full border-[0.125rem] bg-white py-3.5 px-3 focus:border-[#307FF8] appearance-none"
+                            name="ctaegory">
+                            <option value=" " selected hidden>استرداد</option>
+                        </select>
+
+
+                        <img class="absolute right-3 top-9" src="/icons/UpdateMain/arrow.svg" alt="" />
+                    </div>
+                    <div class="relative flex flex-col gap-1 mobile:w-full">
+                        <label for="ctaegory" class="text-[#605D64] text-xs">
+                            عنوان تیکت
+                        </label>
+                        <input type="text"
+                            class="border-[#E1E2E4] focus:outline-none mobile:w-full border-[0.125rem] bg-white py-3.5 px-3 focus:border-[#307FF8] rounded appearance-none"
+                            placeholder="عنوان تیکت" />
+                    </div>
+                </div>
+
+                <div class="flex gap-2 items-center ltr:justify-end">
+                    <button id="create_ticket"
+                        class="border mobile:w-full justify-center py-3 px-10 items-center rounded-[0.625rem] text-white bg-[#307FF8] flex gap-2">
+                        ایجاد تیکت
+                    </button>
+                    <button id="cancel_new_ticket"
+                        class="border mobile:w-full justify-center py-3 px-10 items-center rounded-[0.625rem] text-[#307FF8] border-[#307FF8] flex gap-2">
+                        انصراف
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="return-ticket"
+            class="fixed hidden bg-black/50 top-0 z-40 justify-center items-center left-0 w-full h-full">
+
+            <div
+                class="w-[47.875rem] inner-modal-ticket-new bg-white rounded-[1rem] flex flex-col gap-5 p-4 mobile:max-w-full mobile:rounded-none">
+                <div class="flex gap-2">
+                    <img class="w-8 h-8 m-1 cursor-pointer" id="close-return-ticket" src="/icons/results/close.svg"
+                        alt="close">
+                    <h3 class="text-2xl font-bold text-[#1C0E07] pt-0.5">استرداد بلیط</h3>
+
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <div class="rounded-lg gap-3 flex flex-col bg-[#F7F8F9] px-5 py-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <img src="/icons/UpdateMain/profile.svg" alt="">
+                                <span class="font-bold text-[#1D1B20]">
+                                    حسین احمدیان
+                                </span>
+                            </div>
+
+                            <div class="flex gap-5 items-center">
+                                <div class="flex items-center gap-2">
+                                    <img src="/icons/UpdateMain/clock.svg" alt="">
+                                    <span class="font-bold text-sm text-[#605D64]">
+                                        12:45
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <img src="/icons/UpdateMain/calendar.svg" alt="">
+                                    <span class="font-bold text-sm text-[#605D64]">
+                                        1403/20/08
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p>
+                            باسلام  <br />
+                            درصد جریمه را اعلام بفرمایید 
+                        </p>
+                    </div>
+
+                    <div class="rounded-lg gap-3 flex flex-col bg-[#FFDAC6] px-5 py-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <img src="/icons/UpdateMain/sup.svg" alt="">
+                                <span class="font-bold text-[#1D1B20]">
+                                    نام کاربر پشتیبانی
+                                </span>
+                            </div>
+
+                            <div class="flex gap-5 items-center">
+                                <div class="flex items-center gap-2">
+                                    <img src="/icons/UpdateMain/clock.svg" alt="">
+                                    <span class="font-bold text-sm text-[#605D64]">
+                                        12:45
+                                    </span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <img src="/icons/UpdateMain/calendar.svg" alt="">
+                                    <span class="font-bold text-sm text-[#605D64]">
+                                        1403/20/08
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <p>
+                            همکار گرامی <br />
+                            ضمن سپاس از همراهی شما، با توجه به درخواست شما، شرایط کنسلی رزرو  به شرح زیر است: <br />
+                            مبلغ اعلامی به ازای هر مسافر می باشد.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div
+                    class="w-full border flex rounded-lg px-3 py-2 gap-5 items-center ltr:flex-row-reverse justify-between">
+                    <div class="flex items-center ltr:flex-row-reverse w-full">
+                        <img src="/icons/UpdateMain/send.svg" alt="" />
+
+                        <input type="text" class="outline-none w-full" placeholder="send message..." />
+
+                    </div>
+
+                    <div class="flex gap-3 items-center">
+                        <img src="/icons/UpdateMain/text-bold.svg" alt="" />
+                        <img src="/icons/UpdateMain/text-italic.svg" alt="" />
+                        <img src="/icons/UpdateMain/link.svg" alt="" />
+
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- @component.Footer() -->
@@ -559,7 +703,6 @@
                     Trip</span>
             </div>
         </footer>
-    </div>
 </body>
 
 </html>
