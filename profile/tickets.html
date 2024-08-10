@@ -151,7 +151,8 @@
             <aside class="overflow-hidden lg:hidden rounded-[0.625rem] relative pb-5 bg-white w-full">
                 <div class="h-24 w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
                 <div class="flex justify-center">
-                    <img src="/icons/UpdateMain/profile.png" alt="..." class="absolute top-12 w-24 h-24 rounded-full " />
+                    <img src="/icons/UpdateMain/profile.png" alt="..."
+                        class="absolute top-12 w-24 h-24 rounded-full " />
                 </div>
 
                 <div class="flex mt-16 px-5 text-[#1D1B20] justify-center">
@@ -159,7 +160,7 @@
                         <li>
 
                             <a href="/profile/index.html"
-                                class="flex px-2.5 py-2 flex-col w-full bg-[#FFDAC6] rounded-lg items-center gap-2">
+                                class="flex px-2.5 py-2 flex-col w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile.svg" alt="..." />
 
                                 <span>
@@ -178,26 +179,37 @@
                                 </span>
                             </a>
                         </li>
-                        <li class="flex flex-col px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+                        <li>
 
-                            <span>
-                                Tickets
-                            </span>
+                            <a href="/profile/tickets.html"
+                                class="flex flex-col px-2.5 py-2 w-full bg-[#FFDAC6] rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+
+                                <span>
+                                    Tickets
+                                </span>
+                            </a>
                         </li>
-                        <li class="flex px-2.5 flex-col py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+                        <li>
 
-                            <span>
-                                Transactions
-                            </span>
+                            <a href="/profile/transactions.html"
+                                class="flex px-2.5 flex-col py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+
+                                <span>
+                                    Transactions
+                                </span>
+                            </a>
                         </li>
-                        <li class="flex flex-col px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/support-2.svg" alt="..." />
+                        <li>
+                            <a href="/profile/support.html"
+                                class="flex px-2.5 py-2 flex-col w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/support-2.svg" alt="..." />
 
-                            <span>
-                                Support
-                            </span>
+                                <span>
+                                    Support
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -215,8 +227,7 @@
                     <ul class="w-full flex flex-col gap-3">
                         <li>
 
-                            <a href="/profile/index.html"
-                                class="flex px-2.5 py-2 bg-[#FFDAC6] w-full rounded-lg items-center gap-2">
+                            <a href="/profile/index.html" class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile.svg" alt="..." />
 
                                 <span>
@@ -235,26 +246,37 @@
                                 </span>
                             </a>
                         </li>
-                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+                        <li>
 
-                            <span>
-                                Tickets
-                            </span>
+                            <a href="/profile/tickets.html"
+                                class="flex bg-[#FFDAC6] px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+
+                                <span>
+                                    Tickets
+                                </span>
+                            </a>
                         </li>
-                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+                        <li>
 
-                            <span>
-                                Transactions
-                            </span>
+                            <a href="/profile/transactions.html"
+                                class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+
+                                <span>
+                                    Transactions
+                                </span>
+                            </a>
                         </li>
-                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/support-2.svg" alt="..." />
+                        <li>
+                            <a href="/profile/support.html"
+                                class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/support-2.svg" alt="..." />
 
-                            <span>
-                                Support
-                            </span>
+                                <span>
+                                    Support
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -384,7 +406,7 @@
                             <span>5 سند</span>
                         </div>
                     </div>
-                    <div class="overflow-auto">
+                    <div class="overflow-auto hideScroll">
 
                         <table class="table-auto border-collapse rounded-b-lg border w-full">
                             <thead class="text-[14px] uppercase">
@@ -444,8 +466,8 @@
                                                             clip-rule="evenodd"></path>
                                                     </svg></span></label></div>
                                     </td>
-                                    <td
-                                        class="px-2 py-4 border flex justify-center text-black whitespace-nowrap bg-gray-200">
+                                    <td id="show-sub-menu" data-id="1"
+                                        class="px-2 py-4 border cursor-pointer flex justify-center text-black whitespace-nowrap bg-gray-200">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem"
                                             viewBox="0 0 48 48">
                                             <path fill="none" stroke="currentColor" stroke-linecap="round"
@@ -461,6 +483,67 @@
                                     <td class="px-2 border py-4 whitespace-nowrap">12,000,000</td>
                                     <td class="px-2 border py-4 whitespace-nowrap">متن توضیح</td>
                                     <td class="px-2 border py-4 whitespace-nowrap text-[#2AB930] font-medium">پرداخت شده
+                                    </td>
+
+                                </tr>
+
+                                <tr data-id="1"
+                                    class="hover:bg-gray-100 text-xs text-[#605D64] transition-all border hover:transition-all">
+                                    <td colspan="11" class="hidden" id="sub_menu">
+                                        <table class="table-auto border-collapse rounded-b-lg border w-full">
+                                            <thead class="text-[14px] uppercase">
+                                                <tr class="bg-[#F7F8F9] text-[#605D64]">
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">ایرلاین</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">شماره سفارش</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">نوع سفارش</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">مسیر</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">تاریخ و ساعت رزرو</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">تاریخ و ساعت پرواز</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">قیمت کل (ریال)</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">توضیحات</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">وضعیت</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-sm w-full"><!--[-->
+                                                <tr
+                                                    class="hover:bg-gray-100 text-xs text-[#605D64] transition-all border hover:transition-all">
+
+                                                    <td class="px-2 border py-4 whitespace-nowrap">Iran Air</td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">64538</td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">یک طرفه</td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">مشهد به نجف</td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30
+                                                    </td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30
+                                                    </td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">12,000,000</td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">متن توضیح</td>
+                                                    <td
+                                                        class="px-2 border py-4 whitespace-nowrap text-[#2AB930] font-medium">
+                                                        پرداخت شده
+                                                    </td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </td>
 
                                 </tr>

@@ -160,7 +160,7 @@
                         <li>
 
                             <a href="/profile/index.html"
-                                class="flex px-2.5 py-2 flex-col w-full bg-[#FFDAC6] rounded-lg items-center gap-2">
+                                class="flex px-2.5 py-2 flex-col w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile.svg" alt="..." />
 
                                 <span>
@@ -179,26 +179,37 @@
                                 </span>
                             </a>
                         </li>
-                        <li class="flex flex-col px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+                        <li>
 
-                            <span>
-                                Tickets
-                            </span>
+                            <a href="/profile/tickets.html"
+                                class="flex flex-col px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+
+                                <span>
+                                    Tickets
+                                </span>
+                            </a>
                         </li>
-                        <li class="flex px-2.5 flex-col py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+                        <li>
 
-                            <span>
-                                Transactions
-                            </span>
+                            <a href="/profile/transactions.html"
+                                class="flex px-2.5 flex-col py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+
+                                <span>
+                                    Transactions
+                                </span>
+                            </a>
                         </li>
-                        <li class="flex flex-col px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/support-2.svg" alt="..." />
+                        <li>
+                            <a href="/profile/support.html"
+                                class="flex px-2.5 py-2 flex-col w-full bg-[#FFDAC6] rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/support-2.svg" alt="..." />
 
-                            <span>
-                                Support
-                            </span>
+                                <span>
+                                    Support
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -216,8 +227,7 @@
                     <ul class="w-full flex flex-col gap-3">
                         <li>
 
-                            <a href="/profile/index.html"
-                                class="flex px-2.5 py-2 bg-[#FFDAC6] w-full rounded-lg items-center gap-2">
+                            <a href="/profile/index.html" class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile.svg" alt="..." />
 
                                 <span>
@@ -236,26 +246,35 @@
                                 </span>
                             </a>
                         </li>
-                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+                        <li>
 
-                            <span>
-                                Tickets
-                            </span>
+                            <a href="/profile/tickets.html" class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/ticket.svg" alt="..." />
+    
+                                <span>
+                                    Tickets
+                                </span>
+                            </a>
                         </li>
-                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+                        <li>
 
-                            <span>
-                                Transactions
-                            </span>
+                            <a href="/profile/transactions.html" class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
+    
+                                <span>
+                                    Transactions
+                                </span>
+                            </a>
                         </li>
-                        <li class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
-                            <img src="/icons/UpdateMain/support-2.svg" alt="..." />
+                        <li>
+                            <a href="/profile/support.html"
+                                class="flex px-2.5 py-2 bg-[#FFDAC6] w-full rounded-lg items-center gap-2">
+                                <img src="/icons/UpdateMain/support-2.svg" alt="..." />
 
-                            <span>
-                                Support
-                            </span>
+                                <span>
+                                    Support
+                                </span>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -266,8 +285,8 @@
             </aside>
 
             <!-- @component.profile.transaction-index() -->
-            <main id="info" class="flex flex-col gap-5 lg:w-[80%] lg:h-[49.125rem]">
-                <div class="bg-white mobile:hidden p-6 flex flex-col rounded-xl gap-10 h-[25%] w-full">
+            <main class="flex flex-col gap-5 lg:w-[80%] lg:h-[49.125rem]">
+                <div class="bg-white mobile:hidden p-6 flex flex-col rounded-xl gap-10 lg:h-[25%] w-full">
                     <span class="font-bold text-[#1D1B20] text-2xl">
                         پشتیبانی
                     </span>
@@ -373,7 +392,7 @@
                     </div>
                 </div>
 
-                <div class=" mx-auto bg-white  flex border flex-col rounded-xl gap-5 w-full">
+                <div class="mx-auto bg-white flex border flex-col rounded-xl gap-5 w-full">
                     <div class="flex justify-between px-6 pt-4 items-center">
                         <h6 class="font-semibold">
                             تیکت های پشتیبانی
@@ -392,7 +411,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="overflow-auto">
+                    <div class="overflow-auto hideScroll">
 
                         <table class="table-auto border-collapse rounded-b-lg border w-full">
                             <thead class="text-[14px] uppercase">
@@ -425,8 +444,7 @@
                                 </tr>
                             </thead>
                             <tbody class="text-sm w-full"><!--[-->
-                                <tr
-                                    class="hover:bg-gray-100 text-xs text-[#605D64] transition-all border hover:transition-all">
+                                <tr class="text-xs text-[#605D64] transition-all border hover:transition-all">
                                     <td class="px-2 border py-4 whitespace-nowrap">
                                         <div class="flex justify-center items-center"><label
                                                 class="relative flex items-center rounded-full cursor-pointer"
@@ -443,8 +461,8 @@
                                                             clip-rule="evenodd"></path>
                                                     </svg></span></label></div>
                                     </td>
-                                    <td
-                                        class="px-2 py-4 border flex justify-center text-black whitespace-nowrap bg-gray-200">
+                                    <td id="show-sub-menu" data-id="1"
+                                        class="px-2 py-4 cursor-pointer border flex justify-center text-black whitespace-nowrap bg-gray-200">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem"
                                             viewBox="0 0 48 48">
                                             <path fill="none" stroke="currentColor" stroke-linecap="round"
@@ -457,8 +475,9 @@
                                     <td class="px-2 border py-4 whitespace-nowrap">متن توضیح</td>
                                     <td class="px-2 border py-4 whitespace-nowrap text-[#2AB930] font-medium">پاسخ داده
                                         شده
+                                    </td>
                                     <td class="px-2 border py-4 whitespace-nowrap text-[#307FF8]">
-                                        <div class="flex items-center gap-2">
+                                        <div id="show_more" class="flex cursor-pointer w-fit items-center gap-2">
                                             <span>
                                                 مشاهده
                                             </span>
@@ -467,6 +486,142 @@
                                         </div>
 
                                     </td>
+
+                                </tr>
+
+                                <tr data-id="1"
+                                    class="hover:bg-gray-100 text-xs text-[#605D64] transition-all border hover:transition-all">
+                                    <td colspan="8" class="hidden" id="sub_menu">
+                                        <table class="table-auto  border-collapse rounded-b-lg border w-full">
+                                            <thead class="text-[14px] uppercase">
+                                                <tr class="bg-[#F7F8F9] text-[#605D64]">
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">کد پیگیری</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">عنوان تیکت</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">تاریخ و ساعت</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">توضیحات</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">وضعیت</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-sm w-full"><!--[-->
+                                                <tr
+                                                    class=" bg-[#F7F8F9] text-xs text-[#605D64] transition-all border hover:transition-all">
+                                                    <td class="px-2 border py-4 whitespace-nowrap">64538
+                                                    </td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">بلیط</td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30
+                                                    </td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">متن توضیح</td>
+                                                    <td
+                                                        class="px-2 border py-4 whitespace-nowrap text-[#2AB930] font-medium">
+                                                        پاسخ داده
+                                                        شده
+
+                                                    </td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+
+                                </tr>
+
+                                <tr class="text-xs text-[#605D64] transition-all border hover:transition-all">
+                                    <td class="px-2 border py-4 whitespace-nowrap">
+                                        <div class="flex justify-center items-center"><label
+                                                class="relative flex items-center rounded-full cursor-pointer"
+                                                htmlfor="checkbox"><!-- before:h-12 before:w-12 --><input
+                                                    type="checkbox"
+                                                    class="before:content[''] peer relative h-6 w-6 cursor-pointer appearance-none rounded-md border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full bg-[#F0F1F2] before:bg-gray-500 before:opacity-0 before:transition-opacity checked:border-[#0A77FF] checked:bg-[#0A77FF] checked:before:bg-[#0A77FF] hover:before:opacity-10"
+                                                    id="checkbox"><span
+                                                    class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"><svg
+                                                        xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5"
+                                                        viewBox="0 0 20 20" fill="currentColor" stroke="currentColor"
+                                                        stroke-width="1">
+                                                        <path fill-rule="evenodd"
+                                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg></span></label></div>
+                                    </td>
+                                    <td id="show-sub-menu" data-id="2"
+                                        class="px-2 py-4 cursor-pointer border flex justify-center text-black whitespace-nowrap bg-gray-200">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem"
+                                            viewBox="0 0 48 48">
+                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
+                                                stroke-linejoin="round" stroke-width="2.05" d="M36 18L24 30L12 18" />
+                                        </svg>
+                                    </td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">64538</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">بلیط</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap">متن توضیح</td>
+                                    <td class="px-2 border py-4 whitespace-nowrap text-[#2AB930] font-medium">پاسخ داده
+                                        شده
+                                    </td>
+                                    <td class="px-2 border py-4 whitespace-nowrap text-[#307FF8]">
+                                        <div id="show_more" class="flex cursor-pointer w-fit items-center gap-2">
+                                            <span>
+                                                مشاهده
+                                            </span>
+                                            <img src="/icons/UpdateMain/arrow-left-b.svg" class="ltr:rotate-180"
+                                                alt="" />
+                                        </div>
+
+                                    </td>
+
+                                </tr>
+
+                                <tr data-id="2"
+                                    class="hover:bg-gray-100 text-xs text-[#605D64] transition-all border hover:transition-all">
+                                    <td colspan="8" class="hidden" id="sub_menu">
+                                        <table class="table-auto  border-collapse rounded-b-lg border w-full">
+                                            <thead class="text-[14px] uppercase">
+                                                <tr class="bg-[#F7F8F9] text-[#605D64]">
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">کد پیگیری</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">عنوان تیکت</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">تاریخ و ساعت</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">توضیحات</div>
+                                                    </th>
+                                                    <th class="p-2 whitespace-nowrap border">
+                                                        <div class="text-start">وضعیت</div>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="text-sm w-full"><!--[-->
+                                                <tr
+                                                    class=" bg-[#F7F8F9] text-xs text-[#605D64] transition-all border hover:transition-all">
+                                                    <td class="px-2 border py-4 whitespace-nowrap">64538
+                                                    </td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">بلیط</td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30
+                                                    </td>
+                                                    <td class="px-2 border py-4 whitespace-nowrap">متن توضیح</td>
+                                                    <td
+                                                        class="px-2 border py-4 whitespace-nowrap text-[#2AB930] font-medium">
+                                                        پاسخ داده
+                                                        شده
+
+                                                    </td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </td>
 
                                 </tr>
@@ -546,7 +701,7 @@
             class="fixed hidden bg-black/50 top-0 z-40 justify-center items-center left-0 w-full h-full">
 
             <div
-                class="w-[47.875rem] inner-modal-ticket-new bg-white rounded-[1rem] flex flex-col gap-5 p-4 mobile:max-w-full mobile:rounded-none">
+                class="w-[47.875rem] inner-modal-return bg-white rounded-[1rem] flex flex-col gap-5 p-4 mobile:max-w-full mobile:rounded-none">
                 <div class="flex gap-2">
                     <img class="w-8 h-8 m-1 cursor-pointer" id="close-return-ticket" src="/icons/results/close.svg"
                         alt="close">

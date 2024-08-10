@@ -1333,6 +1333,10 @@ video {
   height: 100vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .max-h-\[24rem\] {
   max-height: 24rem;
 }
@@ -3094,6 +3098,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -3418,11 +3427,6 @@ video {
 .py-\[26px\] {
   padding-top: 26px;
   padding-bottom: 26px;
-}
-
-.py-1\.5 {
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
 }
 
 .pb-2 {
@@ -4959,6 +4963,10 @@ input:focus {
 
   .lg\:h-\[49\.125rem\] {
     height: 49.125rem;
+  }
+
+  .lg\:h-\[25\%\] {
+    height: 25%;
   }
 
   .lg\:w-1\/2 {
