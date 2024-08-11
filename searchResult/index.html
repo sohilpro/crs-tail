@@ -2814,7 +2814,7 @@
     <!-- dilaog end -->
 
     <!-- ticket modal start -->
-    <div id="ticket-modal" class="fixed hidden bg-black/50 top-0 z-40 justify-center items-center left-0 w-full h-full">
+    <div id="ticket-modal" class="fixed flex bg-black/50 top-0 z-40 justify-center items-center left-0 w-full h-full">
         <div
             class="w-[85rem] inner-modal h-[85%] max-w-[100rem] bg-white rounded-[1rem] flex justify-between p-4 gap-2 mobile:max-w-full mobile:rounded-none">
             <div class="grow rtl:pr-2 ltr:pl-2 flex flex-col mobile:pb-20">
@@ -2839,6 +2839,7 @@
 
                     <div class="flex items-center gap-2">
                         <button
+                        id="add_passengers"
                             class="border justify-center text-sm rounded-[10px] py-2 px-3 border-[#307FF8] text-[#307FF8] flex items-center gap-2">
                             <span>add passenger</span>
                             <img src="/icons/UpdateMain/plus.svg" alt="">
@@ -2854,114 +2855,12 @@
                     </div>
                 </div>
 
-                <div class="overflow-auto FirefoxScroll px-2 grow pb-[5rem] mt-6">
+                <div class="overflow-auto FirefoxScroll px-2 grow mt-6">
                     <div class="mt-4">
                         <div><!---->
-                            <div class="flex justify-between"><span
-                                    class="text-lg font-bold leading-[2rem] text-[#1C0E07]">Adult
-                                </span>
-                                <div class="flex gap-4 items-center"></div>
-                            </div>
+                            <div id="ticket_container_passengers" class="flex flex-col gap-5">
+                            
 
-                            <div class="grid grid-cols-4 mt-5 gap-y-10 gap-x-2">
-                                <div class="relative mobile:w-full"><input type="text" placeholder="Enter first name"
-                                        id="name"
-                                        class="border-[#E1E2E4] hover:border-[#8CB8FB] focus:outline-none rounded-[1rem] h-12 w-[16rem] mobile:w-full border-[0.125rem] bg-white text-sm text-[#5B4A42] placeholder:text-[#A69F9B] px-5 pt-1 focus:border-[#307FF8]"><span
-                                        class="absolute -top-[0.55rem] rtl:right-[1.06rem] ltr:left-[1.06rem] text-xs text-[#5B4A42] leading-[1.25rem] bg-white px-1">First
-                                        Name</span><!----></div>
-                                <div class="relative mobile:w-full"><input type="text" placeholder="Enter last name"
-                                        id="l_name"
-                                        class="border-[#E1E2E4] hover:border-[#8CB8FB] focus:outline-none rounded-[1rem] h-12 w-[16rem] mobile:w-full border-[0.125rem] bg-white text-sm text-[#5B4A42] placeholder:text-[#A69F9B] px-5 pt-1 focus:border-[#307FF8]"><span
-                                        class="absolute -top-[0.55rem] rtl:right-[1.06rem] ltr:left-[1.06rem] text-xs text-[#5B4A42] leading-[1.25rem] bg-white px-1">Last
-                                        Name</span><!----></div>
-
-                                <div class="relative mobile:w-full">
-
-                                    <select id="gender"
-                                        class="border-[#E1E2E4] hover:border-[#8CB8FB] focus:outline-none rounded-[1rem] h-12 w-[16rem] mobile:w-full border-[0.125rem] bg-white text-sm text-[#5B4A42] placeholder:text-[#A69F9B] px-5 pt-1 focus:border-[#307FF8] appearance-none"
-                                        name="gender">
-                                        <option value=" " selected hidden>Enter gender</option>
-                                        <option value="male">male</option>
-                                        <option value="female">female</option>
-                                    </select>
-                                    <span
-                                        class="absolute -top-[0.55rem] rtl:right-[1.06rem] ltr:left-[1.06rem] text-xs text-[#5B4A42] leading-[1.25rem] bg-white px-1">gender</span><!---->
-
-                                    <img class="absolute right-3 top-3.5" src="/icons/UpdateMain/arrow.svg" alt="" />
-                                </div>
-                                <div class="relative mobile:w-full">
-
-                                    <div id="birth-date"
-                                        class="border-[#E1E2E4] hover:border-[#8CB8FB] focus:outline-none rounded-[1rem] h-12 w-[16rem] mobile:w-full border-[0.125rem] bg-white text-sm text-[#5B4A42] placeholder:text-[#A69F9B] px-5 py-1 focus:border-[#307FF8] divide-x-2 flex appearance-none"
-                                        name="birth-date">
-                                        <select id="day1" class="appearance-none outline-none w-full ltr:pl-2">
-                                            <option value="tets" selected hidden>day</option>
-                                        </select>
-
-                                        <select id="month1" class="appearance-none outline-none w-full ltr:pl-2">
-                                            <option value="tets" selected hidden>month</option>
-                                        </select>
-                                        <select id="year1" class="appearance-none outline-none w-full ltr:pl-2">
-                                            <option value="tets" selected hidden>year</option>
-                                        </select>
-                                    </div>
-                                    <span
-                                        class="absolute -top-[0.55rem] rtl:right-[1.06rem] ltr:left-[1.06rem] text-xs text-[#5B4A42] leading-[1.25rem] bg-white px-1">birth
-                                        date</span><!---->
-                                </div>
-
-                                <div class="relative mobile:w-full"><input type="text" placeholder="Enter first name"
-                                        id="passport-number"
-                                        class="border-[#E1E2E4] hover:border-[#8CB8FB] focus:outline-none rounded-[1rem] h-12 w-[16rem] mobile:w-full border-[0.125rem] bg-white text-sm text-[#5B4A42] placeholder:text-[#A69F9B] px-5 pt-1 focus:border-[#307FF8]"><span
-                                        class="absolute -top-[0.55rem] rtl:right-[1.06rem] ltr:left-[1.06rem] text-xs text-[#5B4A42] leading-[1.25rem] bg-white px-1">Passport
-                                        Number</span><!----></div>
-
-                                <div class="relative mobile:w-full">
-
-                                    <select id="nationality"
-                                        class="border-[#E1E2E4] hover:border-[#8CB8FB] focus:outline-none rounded-[1rem] h-12 w-[16rem] mobile:w-full border-[0.125rem] bg-white text-sm text-[#5B4A42] placeholder:text-[#A69F9B] px-5 pt-1 focus:border-[#307FF8] appearance-none"
-                                        name="gender">
-                                        <option value=" " selected hidden>Enter Nationality</option>
-                                        <option value="male">male</option>
-                                        <option value="female">female</option>
-                                    </select>
-                                    <span
-                                        class="absolute -top-[0.55rem] rtl:right-[1.06rem] ltr:left-[1.06rem] text-xs text-[#5B4A42] leading-[1.25rem] bg-white px-1">Nationality</span><!---->
-
-                                    <img class="absolute right-3 top-3.5" src="/icons/UpdateMain/arrow.svg" alt="" />
-                                </div>
-
-                                <div class="relative mobile:w-full">
-
-                                    <div id="birth-date"
-                                        class="border-[#E1E2E4] hover:border-[#8CB8FB] focus:outline-none rounded-[1rem] h-12 w-[16rem] mobile:w-full border-[0.125rem] bg-white text-sm text-[#5B4A42] placeholder:text-[#A69F9B] px-5 py-1 focus:border-[#307FF8] divide-x-2 flex appearance-none"
-                                        name="birth-date">
-                                        <input type="text" id="day" class="outline-none w-full " placeholder="day" />
-                                        <input type="text" id="month" placeholder="month"
-                                            class="outline-none w-full ltr:pl-3" />
-                                        <input type="text" class="outline-none w-full ltr:pl-3" id="year"
-                                            placeholder="year" />
-                                    </div>
-                                    <span
-                                        class="absolute -top-[0.55rem] rtl:right-[1.06rem] ltr:left-[1.06rem] text-xs text-[#5B4A42] leading-[1.25rem] bg-white px-1">Expiration
-                                        of passport</span><!---->
-                                </div>
-
-                                <div class="relative mobile:w-full">
-
-                                    <select id="gender"
-                                        class="border-[#E1E2E4] hover:border-[#8CB8FB] focus:outline-none rounded-[1rem] h-12 w-[16rem] mobile:w-full border-[0.125rem] bg-white text-sm text-[#5B4A42] placeholder:text-[#A69F9B] px-5 pt-1 focus:border-[#307FF8] appearance-none"
-                                        name="gender">
-                                        <option value=" " selected hidden>Enter Passport issuing country</option>
-                                        <option value="male">male</option>
-                                        <option value="female">female</option>
-                                    </select>
-                                    <span
-                                        class="absolute -top-[0.55rem] rtl:right-[1.06rem] ltr:left-[1.06rem] text-xs text-[#5B4A42] leading-[1.25rem] bg-white px-1">Passport
-                                        issuing country</span><!---->
-
-                                    <img class="absolute right-3 top-3.5" src="/icons/UpdateMain/arrow.svg" alt="" />
-                                </div>
                             </div>
 
                             <hr class="mt-[1.37rem] h-[0.125rem] bg-[#F0F1F2]" />
@@ -3059,11 +2958,12 @@
                     </div>
                 </div>
 
-                <div class="w-full bg-white p-2.5 shrink-0">
+                <div class="w-full flex flex-col items-center justify-center bg-white p-2.5 shrink-0">
                     <div class="flex gap-2 items-center">
                         <img src="/icons/UpdateMain/refresh.svg" alt="..." />
                         <img src="/icons/UpdateMain/code.png" class="w-[90%] h-[90%]" alt="..." />
                     </div>
+                    <input type="text" class="border mt-2 border-[#E1E2E4] rounded-2xl py-2 w-full px-3" placeholder="عبارت بالا را وارد کنید..."/>
                     <button id="show-payment-modal"
                         class="rounded-[0.625rem] py-2 px-10 w-full bg-[#307FF8] text-white mt-[1.88rem]">Book
                         Flight</button>
