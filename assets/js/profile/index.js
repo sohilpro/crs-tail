@@ -13,17 +13,40 @@ showSubMenuElements.forEach((el) => {
     const id = el.getAttribute("data-id");
 
     // Select the <tr> element with the specific data-id attribute
-    const trElement = document.querySelector(`tr[data-id="${id}"]`);
+    const divElement = document.querySelector(`div[data-id="${id}"]`);
 
-    console.log(trElement);
+    // Hide all other div elements
+    document.querySelectorAll("div[data-id]").forEach((div) => {
+      if (div !== divElement) {
+        div.classList.add("hidden");
+      }
+    });
 
-    // Get the <td> element inside that <tr> element
-    const tdElement = trElement.querySelector("td");
+    // Hide all other buttons' content and reset their icons/text
+    showSubMenuElements.forEach((btn) => {
+      if (btn !== el) {
+        btn.innerHTML = `
+          <span>مشاهده</span>
+          <img src="/icons/UpdateMain/arrow-down-g.svg" alt="" />
+        `;
+      }
+    });
 
-    // Toggle the hidden class on the corresponding row
-    tdElement.classList.toggle("hidden");
+    if (divElement) {
+      // Toggle the hidden class on the corresponding row
+      const isCurrentlyHidden = divElement.classList.contains("hidden");
+      divElement.classList.toggle("hidden", !isCurrentlyHidden);
 
-    // Optional: Toggle the rotate-180 class for the arrow icon
-    el.classList.toggle("rotate-180");
+      // Update the inner HTML based on the current visibility state
+      el.innerHTML = isCurrentlyHidden
+        ? `
+            <span>بستن</span>
+            <img src="/icons/UpdateMain/arrow-up-g.svg" alt="" />
+          `
+        : `
+            <span>مشاهده</span>
+            <img src="/icons/UpdateMain/arrow-down-g.svg" alt="" />
+          `;
+    }
   });
 });

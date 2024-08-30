@@ -146,21 +146,18 @@
             </div>
         </nav>
 
-        <div class="flex flex-col lg:flex-row gap-7 mt-5 mb-28 container">
+        <main class="bg-crs-first h-48 -z-10"></main>
+        <div class="flex flex-col lg:flex-row gap-5 -mt-[9.5rem] mb-28 container">
             <!-- @component.profile.sideBar-mobile() -->
-            <aside class="overflow-hidden lg:hidden rounded-[0.625rem] relative pb-5 bg-white w-full">
-                <div class="h-24 w-full bg-gradient-to-r from-[#FFA371] bg-[#FF5A00]"></div>
-                <div class="flex justify-center">
-                    <img src="/icons/UpdateMain/profile.png" alt="..."
-                        class="absolute top-12 w-24 h-24 rounded-full " />
-                </div>
+            <aside class="overflow-hidden lg:hidden rounded-xl relative bg-white w-full">
 
-                <div class="flex mt-16 px-5 text-[#1D1B20] justify-center">
+
+                <div class="flex items-center px-4 py-3 text-[#1D1B20] justify-center">
                     <ul class="w-full grid grid-cols-5 justify-center gap-3">
                         <li>
 
                             <a href="/profile/index.html"
-                                class="flex px-2.5 py-2 flex-col w-full rounded-lg items-center gap-2">
+                                class="flex px-2.5 py-2 flex-col opacity-50 w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile.svg" alt="..." />
 
                                 <span>
@@ -171,7 +168,7 @@
                         <li>
 
                             <a href="/profile/wallet.html"
-                                class="flex px-2.5 py-2 w-full flex-col ] rounded-lg items-center gap-2">
+                                class="flex px-2.5 opacity-50 py-2 w-full flex-col rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
 
                                 <span>
@@ -182,7 +179,7 @@
                         <li>
 
                             <a href="/profile/tickets.html"
-                                class="flex flex-col px-2.5 py-2 w-full bg-[#FFDAC6] rounded-lg items-center gap-2">
+                                class="flex flex-col px-2.5 py-2 w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/ticket.svg" alt="..." />
 
                                 <span>
@@ -193,7 +190,7 @@
                         <li>
 
                             <a href="/profile/transactions.html"
-                                class="flex px-2.5 flex-col py-2 w-full rounded-lg items-center gap-2">
+                                class="flex opacity-50 px-2.5 flex-col py-2 w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
 
                                 <span>
@@ -203,7 +200,7 @@
                         </li>
                         <li>
                             <a href="/profile/support.html"
-                                class="flex px-2.5 py-2 flex-col w-full rounded-lg items-center gap-2">
+                                class="flex opacity-50 px-2.5 py-2 flex-col w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/support-2.svg" alt="..." />
 
                                 <span>
@@ -227,7 +224,8 @@
                     <ul class="w-full flex flex-col gap-3">
                         <li>
 
-                            <a href="/profile/index.html" class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                            <a href="/profile/index.html"
+                                class="flex opacity-50 px-2.5 py-2 w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile.svg" alt="..." />
 
                                 <span>
@@ -238,7 +236,7 @@
                         <li>
 
                             <a href="/profile/wallet.html"
-                                class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                class="flex px-2.5 py-2 opacity-50 w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile-wallet.svg" alt="..." />
 
                                 <span>
@@ -249,7 +247,7 @@
                         <li>
 
                             <a href="/profile/tickets.html"
-                                class="flex bg-[#FFDAC6] px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/ticket.svg" alt="..." />
 
                                 <span>
@@ -260,7 +258,7 @@
                         <li>
 
                             <a href="/profile/transactions.html"
-                                class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                class="flex px-2.5 py-2 w-full opacity-50 rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/profile-trans.svg" alt="..." />
 
                                 <span>
@@ -270,7 +268,7 @@
                         </li>
                         <li>
                             <a href="/profile/support.html"
-                                class="flex px-2.5 py-2 w-full rounded-lg items-center gap-2">
+                                class="flex px-2.5 py-2 w-full opacity-50 rounded-lg items-center gap-2">
                                 <img src="/icons/UpdateMain/support-2.svg" alt="..." />
 
                                 <span>
@@ -396,161 +394,340 @@
                     </div>
                 </div>
 
-                <div class=" mx-auto bg-white  flex border flex-col rounded-xl gap-5 w-full">
-                    <div class="flex justify-between px-6 pt-4 items-center">
-                        <h6 class="font-semibold">Tickets</h6>
-                        <div class="flex items-center gap-5">
 
-                            <div class="flex gap-2 items-center"><img src="/icons/UpdateMain/export.svg"
-                                    alt="..." /><span>خروجی</span></div>
-                            <span>5 سند</span>
-                        </div>
-                    </div>
-                    <div class="overflow-auto hideScroll">
+                <div class="rounded-xl mobile:hidden p-5 w-full bg-[#FFDAC6] text-[#1E2A38]">
+                    <div class="grid grid-cols-8">
+                        <span>
+                            شماره سفارش
+                        </span>
+                        <span>
+                            نوع سفارش
+                        </span>
+                        <span>
+                            مسیر
+                        </span>
+                        <span>
+                            تاریخ رزرو
+                        </span>
+                        <span>
+                            ساعت رزرو
+                        </span>
+                        <span>
+                            مبلغ کل(ریال)
+                        </span>
+                        <span>
+                            وضعیت
+                        </span>
 
-                        <table class="table-auto border-collapse rounded-b-lg border w-full">
-                            <thead class="text-[14px] uppercase">
-                                <tr class="bg-[#FFCEB5] text-[#605D64]">
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start"></div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-
-                                    </th>
-
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">ایرلاین</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">شماره سفارش</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">نوع سفارش</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">مسیر</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">تاریخ و ساعت رزرو</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">تاریخ و ساعت پرواز</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">قیمت کل (ریال)</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">توضیحات</div>
-                                    </th>
-                                    <th class="p-2 whitespace-nowrap border">
-                                        <div class="text-start">وضعیت</div>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody class="text-sm w-full"><!--[-->
-                                <tr
-                                    class="hover:bg-gray-100 text-xs text-[#605D64] transition-all border hover:transition-all">
-                                    <td class="px-2 border py-4 whitespace-nowrap">
-                                        <div class="flex justify-center items-center"><label
-                                                class="relative flex items-center rounded-full cursor-pointer"
-                                                htmlfor="checkbox"><!-- before:h-12 before:w-12 --><input
-                                                    type="checkbox"
-                                                    class="before:content[''] peer relative h-6 w-6 cursor-pointer appearance-none rounded-md border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full bg-[#F0F1F2] before:bg-gray-500 before:opacity-0 before:transition-opacity checked:border-[#0A77FF] checked:bg-[#0A77FF] checked:before:bg-[#0A77FF] hover:before:opacity-10"
-                                                    id="checkbox"><span
-                                                    class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100"><svg
-                                                        xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5"
-                                                        viewBox="0 0 20 20" fill="currentColor" stroke="currentColor"
-                                                        stroke-width="1">
-                                                        <path fill-rule="evenodd"
-                                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                            clip-rule="evenodd"></path>
-                                                    </svg></span></label></div>
-                                    </td>
-                                    <td id="show-sub-menu" data-id="1"
-                                        class="px-2 py-4 border cursor-pointer flex justify-center text-black whitespace-nowrap bg-gray-200">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem"
-                                            viewBox="0 0 48 48">
-                                            <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                                stroke-linejoin="round" stroke-width="2.05" d="M36 18L24 30L12 18" />
-                                        </svg>
-                                    </td>
-                                    <td class="px-2 border py-4 whitespace-nowrap">Iran Air</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap">64538</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap">یک طرفه</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap">مشهد به نجف</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap">12,000,000</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap">متن توضیح</td>
-                                    <td class="px-2 border py-4 whitespace-nowrap text-[#2AB930] font-medium">پرداخت شده
-                                    </td>
-
-                                </tr>
-
-                                <tr data-id="1"
-                                    class="hover:bg-gray-100 text-xs text-[#605D64] transition-all border hover:transition-all">
-                                    <td colspan="11" class="hidden" id="sub_menu">
-                                        <table class="table-auto border-collapse rounded-b-lg border w-full">
-                                            <thead class="text-[14px] uppercase">
-                                                <tr class="bg-[#F7F8F9] text-[#605D64]">
-                                                    <th class="p-2 whitespace-nowrap border">
-                                                        <div class="text-start">ایرلاین</div>
-                                                    </th>
-                                                    <th class="p-2 whitespace-nowrap border">
-                                                        <div class="text-start">شماره سفارش</div>
-                                                    </th>
-                                                    <th class="p-2 whitespace-nowrap border">
-                                                        <div class="text-start">نوع سفارش</div>
-                                                    </th>
-                                                    <th class="p-2 whitespace-nowrap border">
-                                                        <div class="text-start">مسیر</div>
-                                                    </th>
-                                                    <th class="p-2 whitespace-nowrap border">
-                                                        <div class="text-start">تاریخ و ساعت رزرو</div>
-                                                    </th>
-                                                    <th class="p-2 whitespace-nowrap border">
-                                                        <div class="text-start">تاریخ و ساعت پرواز</div>
-                                                    </th>
-                                                    <th class="p-2 whitespace-nowrap border">
-                                                        <div class="text-start">قیمت کل (ریال)</div>
-                                                    </th>
-                                                    <th class="p-2 whitespace-nowrap border">
-                                                        <div class="text-start">توضیحات</div>
-                                                    </th>
-                                                    <th class="p-2 whitespace-nowrap border">
-                                                        <div class="text-start">وضعیت</div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody class="text-sm w-full"><!--[-->
-                                                <tr
-                                                    class="hover:bg-gray-100 text-xs text-[#605D64] transition-all border hover:transition-all">
-
-                                                    <td class="px-2 border py-4 whitespace-nowrap">Iran Air</td>
-                                                    <td class="px-2 border py-4 whitespace-nowrap">64538</td>
-                                                    <td class="px-2 border py-4 whitespace-nowrap">یک طرفه</td>
-                                                    <td class="px-2 border py-4 whitespace-nowrap">مشهد به نجف</td>
-                                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30
-                                                    </td>
-                                                    <td class="px-2 border py-4 whitespace-nowrap">20/02/1403 - 22:30
-                                                    </td>
-                                                    <td class="px-2 border py-4 whitespace-nowrap">12,000,000</td>
-                                                    <td class="px-2 border py-4 whitespace-nowrap">متن توضیح</td>
-                                                    <td
-                                                        class="px-2 border py-4 whitespace-nowrap text-[#2AB930] font-medium">
-                                                        پرداخت شده
-                                                    </td>
-
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
+                <div class="flex mobile:hidden flex-col gap-1">
+
+                    <div class="rounded-xl whitespace-nowrap flex flex-col gap-5 p-5 w-full bg-white text-[#7D8590]">
+                        <div class="grid grid-cols-8">
+                            <span>
+                                6598563254
+                            </span>
+                            <span>
+                                بلیط پرواز یک مسیره
+                            </span>
+                            <span>
+                                تهران به تورنتو
+                            </span>
+                            <span>
+                                10/Nov/2022
+                            </span>
+                            <span>
+                                22:10
+                            </span>
+                            <span>
+                                12.000.000
+                            </span>
+                            <span class="text-[#2AB930]">
+                                پرداخت شده
+                            </span>
+                            <span id="show-sub-menu" data-id="1"
+                                class="flex cursor-pointer gap-2 items-center text-[#FF5A00]">
+                                <span>
+                                    مشاهده
+                                </span>
+                                <img src="/icons/UpdateMain/arrow-down-g.svg" alt="" />
+                            </span>
+                        </div>
+                        <div data-id="1" id="sub_menu"
+                            class="rounded-xl hidden px-2.5 w-full flex-col flex gap-6 text-[#1C0E07]">
+                            <hr />
+                            <div class="grid grid-cols-10">
+                                <span>
+                                    نام
+                                </span>
+                                <span>
+                                    نام خانوادگی
+                                </span>
+                                <span>
+                                    جنسیت
+                                </span>
+                                <span>
+                                    تاریخ تولد
+                                </span>
+                                <span>
+                                    شماره پاسپورت
+                                </span>
+                                <span>
+                                    ملیت
+                                </span>
+                                <span>
+                                    انقضا پاسپورت
+                                </span>
+                                <span>
+                                    کشور صادر کننده
+                                </span>
+                                <span>
+                                    مبلغ
+                                </span>
+                            </div>
+
+                            <div class="grid grid-cols-10">
+                                <span>
+                                    Amirhossein
+                                </span>
+                                <span>
+                                    Ahmadian
+                                </span>
+                                <span>
+                                    مرد
+                                </span>
+                                <span>
+                                    11/nov/1999
+                                </span>
+                                <span>
+                                    11155654897
+                                </span>
+                                <span>
+                                    ایران
+                                </span>
+                                <span>
+                                    5/May/2024
+                                </span>
+                                <span>
+                                    ایران
+                                </span>
+                                <span>
+                                    1.200 USD
+                                </span>
+                                <span>
+                                    <img src="/icons/UpdateMain/download.svg" alt="" />
+                                </span>
+                            </div>
+
+                            <div class="flex gap-2 items-center">
+                                <button class="text-white w-fit rounded-xl h-fit py-2 px-6 bg-[#307FF8] border">
+                                    دانلود همه بلیط ها
+                                </button>
+                                <button class="text-[#307FF8] w-fit rounded-xl h-fit py-2 px-6 border-[#307FF8] border">
+                                    پشتیبانی
+                                </button>
+                                <button class="text-[#307FF8] w-fit rounded-xl h-fit py-2 px-6 border-[#307FF8] border">
+                                    استرداد
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rounded-xl whitespace-nowrap flex flex-col gap-5 p-5 w-full bg-white text-[#7D8590]">
+                        <div class="grid grid-cols-8">
+                            <span>
+                                6598563254
+                            </span>
+                            <span>
+                                بلیط پرواز یک مسیره
+                            </span>
+                            <span>
+                                تهران به تورنتو
+                            </span>
+                            <span>
+                                10/Nov/2022
+                            </span>
+                            <span>
+                                22:10
+                            </span>
+                            <span>
+                                12.000.000
+                            </span>
+                            <span class="text-[#2AB930]">
+                                پرداخت شده
+                            </span>
+                            <span id="show-sub-menu" data-id="2"
+                                class="flex cursor-pointer gap-2 items-center text-[#FF5A00]">
+                                <span>
+                                    مشاهده
+                                </span>
+                                <img src="/icons/UpdateMain/arrow-down-g.svg" alt="" />
+                            </span>
+                        </div>
+                        <div data-id="2" id="sub_menu"
+                            class="rounded-xl hidden px-2.5 w-full flex-col flex gap-6 text-[#1C0E07]">
+                            <hr />
+                            <div class="grid grid-cols-10">
+                                <span>
+                                    نام
+                                </span>
+                                <span>
+                                    نام خانوادگی
+                                </span>
+                                <span>
+                                    جنسیت
+                                </span>
+                                <span>
+                                    تاریخ تولد
+                                </span>
+                                <span>
+                                    شماره پاسپورت
+                                </span>
+                                <span>
+                                    ملیت
+                                </span>
+                                <span>
+                                    انقضا پاسپورت
+                                </span>
+                                <span>
+                                    کشور صادر کننده
+                                </span>
+                                <span>
+                                    مبلغ
+                                </span>
+                            </div>
+
+                            <div class="grid grid-cols-10">
+                                <span>
+                                    Amirhossein
+                                </span>
+                                <span>
+                                    Ahmadian
+                                </span>
+                                <span>
+                                    مرد
+                                </span>
+                                <span>
+                                    11/nov/1999
+                                </span>
+                                <span>
+                                    11155654897
+                                </span>
+                                <span>
+                                    ایران
+                                </span>
+                                <span>
+                                    5/May/2024
+                                </span>
+                                <span>
+                                    ایران
+                                </span>
+                                <span>
+                                    1.200 USD
+                                </span>
+                                <span>
+                                    <img src="/icons/UpdateMain/download.svg" alt="" />
+                                </span>
+                            </div>
+
+                            <div class="flex gap-2 items-center">
+                                <button class="text-white w-fit rounded-xl h-fit py-2 px-6 bg-[#307FF8] border">
+                                    دانلود همه بلیط ها
+                                </button>
+                                <button class="text-[#307FF8] w-fit rounded-xl h-fit py-2 px-6 border-[#307FF8] border">
+                                    پشتیبانی
+                                </button>
+                                <button class="text-[#307FF8] w-fit rounded-xl h-fit py-2 px-6 border-[#307FF8] border">
+                                    استرداد
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-xl lg:hidden py-3 flex flex-col gap-4 px-2 bg-white">
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            شماره سفارش
+                        </span>
+                        <span class="text-[#7D8590]">
+                            6598563254
+                        </span>
+
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            نوع سفارش
+                        </span>
+                        <span class="text-[#7D8590]">
+                            بلیط پرواز یک مسیره
+                        </span>
+
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            مسیر
+                        </span>
+                        <span class="text-[#7D8590]">
+                            تهران به تورنتو
+                        </span>
+
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            تاریخ رزرو
+                        </span>
+                        <span class="text-[#7D8590]">
+                            10/Nov/2022
+                        </span>
+
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            ساعت رزرو
+                        </span>
+                        <span class="text-[#7D8590]">
+                            22:10
+                        </span>
+
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            مبلغ کل(ریال)
+                        </span>
+                        <span class="text-[#7D8590]">
+                            12.000.000
+                        </span>
+
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-[#1E2A38]">
+                            وضعیت
+                        </span>
+                        <span class="text-[#2AB930]">
+                            نهایی شده
+                        </span>
+
+                    </div>
+                    <div class="flex w-full gap-2 flex-col">
+                        <button class="text-white w-full rounded-xl h-fit py-2 px-6 bg-[#307FF8] border">
+                            دانلود همه بلیط ها
+                        </button>
+
+                        <div class="flex items-center gap-2">
+                            <button class="text-[#307FF8] w-full rounded-xl h-fit py-2 px-6 border-[#307FF8] border">
+                                مسافران
+                            </button>
+                            <button class="text-[#307FF8] w-full rounded-xl h-fit py-2 px-6 border-[#307FF8] border">
+                                پشتیبانی
+                            </button>
+                            <button class="text-[#307FF8] w-full rounded-xl h-fit py-2 px-6 border-[#307FF8] border">
+                                استرداد
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </main>
 
 
