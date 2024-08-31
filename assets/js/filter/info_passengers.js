@@ -2,6 +2,7 @@ const containerPassengers = document.getElementById(
   "ticket_container_passengers"
 );
 const addPassengersBtn = document.getElementById("add_passengers");
+const addPassengerDropDown = document.getElementById("add_pasenger_drop_down");
 
 const passengers = [
   {
@@ -13,6 +14,10 @@ const passengers = [
     delete: true,
   },
 ];
+
+const toggleOpen = (event, el) => {
+  el.classList.toggle("hidden");
+};
 
 function populateDropdowns(formId) {
   const daySelect = document.getElementById(`day${formId}`);
@@ -213,10 +218,11 @@ document.addEventListener("DOMContentLoaded", () => render());
 addPassengersBtn.addEventListener("click", (event) => {
   event.preventDefault();
   event.stopPropagation();
-  passengers.push({
-    passenger: "Adults",
-    delete: true,
-  });
+  // passengers.push({
+  //   passenger: "Adults",
+  //   delete: true,
+  // });
+  toggleOpen(event, addPassengerDropDown);
 
   render();
 });

@@ -2814,7 +2814,7 @@
     <!-- dilaog end -->
 
     <!-- ticket modal start -->
-    <div id="ticket-modal" class="fixed flex bg-black/50 top-0 z-40 justify-center items-center left-0 w-full h-full">
+    <div id="ticket-modal" class="fixed hidden bg-black/50 top-0 z-40 justify-center items-center left-0 w-full h-full">
         <div
             class="w-[85rem] inner-modal h-[85%] max-w-[100rem] bg-white rounded-[1rem] flex justify-between p-4 gap-2 mobile:max-w-full mobile:rounded-none">
             <div class="grow rtl:pr-2 ltr:pl-2 flex flex-col mobile:pb-20">
@@ -2837,13 +2837,28 @@
                         </div><!---->
                     </div>
 
-                    <div class="flex items-center gap-2">
-                        <button
-                        id="add_passengers"
+                    <div class="flex items-center gap-2 relative">
+                        <button id="add_passengers"
                             class="border justify-center text-sm rounded-[10px] py-2 px-3 border-[#307FF8] text-[#307FF8] flex items-center gap-2">
                             <span>add passenger</span>
-                            <img src="/icons/UpdateMain/plus.svg" alt="">
+                            <img src="/icons/UpdateMain/plus.svg" alt="" />
                         </button>
+
+                        <div id="add_pasenger_drop_down" class="absolute bg-white p-3 text-[#1C0E07] shadow-md -bottom-32 z-10 w-[13.563rem] hidden rounded-lg flex flex-col gap-3">
+                            <div class="flex gap-2">
+                                <img src="/icons/UpdateMain/plus.svg" alt="" />
+                                <span>بزرگسال</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="/icons/UpdateMain/plus.svg" alt="" />
+                                <span>بزرگسال</span>
+                            </div>
+                            <div class="flex gap-2">
+                                <img src="/icons/UpdateMain/plus.svg" alt="" />
+                                <span>بزرگسال</span>
+                            </div>
+                        </div>
+
                         <button id="show_search_passengers"
                             class="border justify-center flex items-center text-sm py-2 rounded-[10px] px-3 border-[#307FF8] text-[#307FF8]">
                             A selection from previous travelers
@@ -2859,7 +2874,7 @@
                     <div class="mt-4">
                         <div><!---->
                             <div id="ticket_container_passengers" class="flex flex-col gap-5">
-                            
+
 
                             </div>
 
@@ -2963,7 +2978,8 @@
                         <img src="/icons/UpdateMain/refresh.svg" alt="..." />
                         <img src="/icons/UpdateMain/code.png" class="w-[90%] h-[90%]" alt="..." />
                     </div>
-                    <input type="text" class="border mt-2 border-[#E1E2E4] rounded-2xl py-2 w-full px-3" placeholder="عبارت بالا را وارد کنید..."/>
+                    <input type="text" class="border mt-2 border-[#E1E2E4] rounded-2xl py-2 w-full px-3"
+                        placeholder="عبارت بالا را وارد کنید..." />
                     <button id="show-payment-modal"
                         class="rounded-[0.625rem] py-2 px-10 w-full bg-[#307FF8] text-white mt-[1.88rem]">Book
                         Flight</button>

@@ -94,3 +94,5 @@ closeSavePaymentModal.addEventListener("click", () => {
   handleCloseModal(PaymentYesModal);
   handleCloseModal(PaymentModal);
 });
+
+
