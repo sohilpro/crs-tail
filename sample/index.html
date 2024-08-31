@@ -6,13 +6,14 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/output.css" />
+
     <title>crstrip.com</title>
 </head>
 
 <body class="select-none bg-gray-200">
     <div class="font-Kalameh flex flex-col justify-between wrap">
         <nav class="bg-white z-30 sticky lg:static top-0 border-b">
-            <div class="max-w-7xl w-fll mx-auto">
+            <div class="container">
                 <div class="flex justify-between items-center lg:container px-5 lg:px-0 mx-auto py-4 lg:py-6">
                     <div class="flex gap-10 items-center"><a href="/"
                             class="router-link-active router-link-exact-active"><img alt="logo"
@@ -38,7 +39,7 @@
                             <span>09184720235</span>
                             <div class="absolute"><!----></div>
                         </div>
-                    </div><button class="lg:hidden"><svg xmlns="http://www.w3.org/2000/svg"
+                    </div><button id="show-sideBar" class="lg:hidden"><svg xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon"
                             width="2rem" height="2rem" viewBox="0 0 24 24">
                             <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
@@ -47,6 +48,125 @@
                 </div>
             </div>
         </nav>
+
+        <aside id="sideBar" class="fixed hidden lg:hidden w-full h-full top-0 bg-black/50 z-[99999]">
+            <div class="bg-white inner-sideBar w-[22.625rem] h-full py-4 pr-4 pl-6 flex flex-col justify-between">
+                <div class="flex text-[#1D1B20] flex-col gap-10">
+                    <div class="flex flex-col gap-5">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <img src="/icons/UpdateMain/user-b.svg" alt="" class="w-6 h-6" />
+                                <span>
+                                    Ayoub Gharibavi
+                                </span>
+                            </div>
+
+                            <img id="close-sideBar" src="/icons/UpdateMain/close-t.svg" alt="" class="cursor-pointer" />
+                        </div>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex flex-col gap-1">
+                                <span class="text-xs text-[#605D64]">Wallet</span>
+
+                                <div class="flex gap-4 items-center">
+                                    <span>12،000،000</span>
+
+                                    <span class="text-[#605D64]">USD</span>
+                                </div>
+                            </div>
+
+                            <img src="/icons/UpdateMain/add.svg" alt="" />
+                        </div>
+
+                        <hr class="w-[90%] mx-auto" />
+
+                        <div id="languages_parent" class="relative cursor-pointer">
+                            <div id="inner_lang" class="flex items-center gap-3">
+                                <img src="/icons/UpdateMain/arrow.svg" alt="">
+                                <span>
+                                    English
+                                </span>
+                                <img src="/icons/UpdateMain/english.svg" alt="">
+                            </div>
+
+                            <div id="languages"
+                                class="flex hidden text-[#1D1B20] flex-col gap-5 py-5 z-50 top-10 px-5 justify-center items-center absolute bg-white rounded-lg shadow">
+                                <div class="flex cursor-pointer items-center pr-10 gap-2">
+                                    <img src="/icons/UpdateMain/farsi.svg" alt="...">
+                                    <span>Farsi</span>
+                                </div>
+                                <div class="flex cursor-pointer items-center gap-2">
+                                    <img src="/icons/UpdateMain/arabic.svg" alt="...">
+                                    <span>Arabic</span>
+                                </div>
+                                <div class="flex cursor-pointer items-center gap-2">
+                                    <img src="/icons/UpdateMain/english.svg" alt="...">
+                                    <span>English</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="flex flex-col gap-4">
+                        <li>
+                            <a href="#" class="flex items-center gap-2">
+                                <img src="/icons/UpdateMain/airplane-s.svg" alt="" />
+                                <span>
+                                    پرواز
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-2">
+                                <img src="/icons/UpdateMain/acc.svg" alt="" />
+                                <span>
+                                    حساب کاربری
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-2">
+                                <img src="/icons/UpdateMain/note-s.svg" alt="" />
+                                <span>
+                                    خدمات
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-2">
+                                <img src="/icons/UpdateMain/support-2.svg" alt="" />
+                                <span>
+                                    پشتیبانی
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-2">
+                                <img src="/icons/UpdateMain/info-s.svg" alt="" />
+                                <span>
+                                    درباره ما
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center gap-2">
+                                <img src="/icons/UpdateMain/call-s.svg" alt="" />
+                                <span>
+                                    تماس با ما
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="flex text-[#EE0035] gap-4 items-center">
+                    <img src="/icons/UpdateMain/logout.svg" alt="" />
+                    <span>
+                        خروج از حساب کاربری
+                    </span>
+                </button>
+            </div>
+        </aside>
 
         <div
             class="relative h-[50rem] lg:h-[35.75rem] bg-[url('/icons/UpdateMain/h-air.jpg')] bg-cover w-full flex items-center">
@@ -324,7 +444,8 @@
                 </span>
 
                 <div class="flex flex-col gap-2">
-                    <div class="flex gap-2 rounded-xl bg-white border p-6 w-full lg:w-[50.125rem] border-[#DCDFE4] flex-col">
+                    <div
+                        class="flex gap-2 rounded-xl bg-white border p-6 w-full lg:w-[50.125rem] border-[#DCDFE4] flex-col">
                         <div class="font-bold flex justify-between items-center">
                             <div class="flex gap-2 items-center">
                                 <span>●</span>
@@ -345,7 +466,8 @@
                             فارسی ایجاد کرد.
                         </p>
                     </div>
-                    <div class="flex gap-2 rounded-xl bg-white border p-6 w-full lg:w-[50.125rem] border-[#DCDFE4] flex-col">
+                    <div
+                        class="flex gap-2 rounded-xl bg-white border p-6 w-full lg:w-[50.125rem] border-[#DCDFE4] flex-col">
                         <div class="font-bold flex justify-between items-center">
                             <div class="flex gap-2 items-center">
                                 <span>●</span>
@@ -366,7 +488,8 @@
                             فارسی ایجاد کرد.
                         </p>
                     </div>
-                    <div class="flex gap-2 rounded-xl bg-white border p-6 w-full lg:w-[50.125rem] border-[#DCDFE4] flex-col">
+                    <div
+                        class="flex gap-2 rounded-xl bg-white border p-6 w-full lg:w-[50.125rem] border-[#DCDFE4] flex-col">
                         <div class="font-bold flex justify-between items-center">
                             <div class="flex gap-2 items-center">
                                 <span>●</span>
@@ -387,7 +510,8 @@
                             فارسی ایجاد کرد.
                         </p>
                     </div>
-                    <div class="flex gap-2 rounded-xl bg-white border p-6 w-full lg:w-[50.125rem] border-[#DCDFE4] flex-col">
+                    <div
+                        class="flex gap-2 rounded-xl bg-white border p-6 w-full lg:w-[50.125rem] border-[#DCDFE4] flex-col">
                         <div class="font-bold flex justify-between items-center">
                             <div class="flex gap-2 items-center">
                                 <span>●</span>
@@ -481,5 +605,7 @@
         </footer>
     </div>
 </body>
+
+<script type="module" src="../assets/js/sample/index.js"></script>
 
 </html>
