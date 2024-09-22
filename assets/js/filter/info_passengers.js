@@ -85,7 +85,7 @@ function render() {
                                 </div>
                                         </div>
             
-                                        <div class="grid grid-cols-4 mt-5 gap-y-10 gap-x-2">
+                                        <div class="grid grid-cols-1 lg:grid-cols-4 mt-5 gap-y-10 gap-x-2">
                                             <div class="relative mobile:w-full"><input type="text" placeholder="Enter first name"
                                                     id="name"
                                                     class="border-[#E1E2E4] hover:border-[#8CB8FB] focus:outline-none rounded-[1rem] h-12 w-[16rem] mobile:w-full border-[0.125rem] bg-white text-sm text-[#5B4A42] placeholder:text-[#A69F9B] px-5 pt-1 focus:border-[#307FF8]"><span

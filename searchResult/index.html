@@ -2816,13 +2816,13 @@
     <!-- ticket modal start -->
     <div id="ticket-modal" class="fixed hidden bg-black/50 top-0 z-40 justify-center items-center left-0 w-full h-full">
         <div
-            class="w-[85rem] inner-modal h-[85%] max-w-[100rem] bg-white rounded-[1rem] flex justify-between p-4 gap-2 mobile:max-w-full mobile:rounded-none">
-            <div class="grow rtl:pr-2 ltr:pl-2 flex flex-col mobile:pb-20">
+            class="lg:w-[85rem] h-full w-full inner-modal lg:h-[85%] max-w-[100rem] bg-white rounded-[1rem] flex justify-between p-4 gap-2 mobile:max-w-full mobile:rounded-none">
+            <div class="grow rtl:pr-2 ltr:pl-2 flex flex-col mobile:pb-5">
                 <div class="flex justify-between">
                     <div class="flex gap-3 items-center">
                         <img class="w-8 h-8 m-1 cursor-pointer" id="close-ticket-modal" src="/icons/results/close.svg"
                             alt="close">
-                        <h3 class="text-2xl font-bold text-[#1C0E07] pt-1">Passenger Information</h3>
+                        <h3 class="lg:text-2xl font-bold text-[#1C0E07] pt-1">Passenger Information</h3>
                         <div
                             class="flex gap-2 items-center px-[0.63rem] text-lg font-bold leading-[2rem] text-crs-first pt-0.5">
                             <svg class="w-6 h-6" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -2844,7 +2844,8 @@
                             <img src="/icons/UpdateMain/plus.svg" alt="" />
                         </button>
 
-                        <div id="add_pasenger_drop_down" class="absolute bg-white p-3 text-[#1C0E07] shadow-md -bottom-32 z-10 w-[13.563rem] hidden rounded-lg flex flex-col gap-3">
+                        <div id="add_pasenger_drop_down"
+                            class="absolute bg-white p-3 text-[#1C0E07] shadow-md -bottom-32 z-10 w-[13.563rem] hidden rounded-lg flex flex-col gap-3">
                             <div class="flex gap-2">
                                 <img src="/icons/UpdateMain/plus.svg" alt="" />
                                 <span>بزرگسال</span>
@@ -2860,17 +2861,17 @@
                         </div>
 
                         <button id="show_search_passengers"
-                            class="border justify-center flex items-center text-sm py-2 rounded-[10px] px-3 border-[#307FF8] text-[#307FF8]">
+                            class="border hidden justify-center lg:flex items-center text-sm py-2 rounded-[10px] px-3 border-[#307FF8] text-[#307FF8]">
                             A selection from previous travelers
                         </button>
                         <button id="show_yes_passengers"
-                            class="border justify-center flex items-center text-sm py-2 rounded-[10px] px-3 border-[#307FF8] text-[#307FF8]">
+                            class="border hidden justify-center lg:flex items-center text-sm py-2 rounded-[10px] px-3 border-[#307FF8] text-[#307FF8]">
                             Save passengers
                         </button>
                     </div>
                 </div>
 
-                <div class="overflow-auto FirefoxScroll px-2 grow mt-6">
+                <div class="overflow-auto FirefoxScroll  px-2 grow mt-6">
                     <div class="mt-4">
                         <div><!---->
                             <div id="ticket_container_passengers" class="flex flex-col gap-5">
@@ -2900,9 +2901,46 @@
                         </div>
                     </div>
                 </div>
+
+                <div
+                    class="w-full border-2 lg:hidden rounded-xl flex flex-col items-center justify-center bg-white p-2.5 shrink-0">
+                    <div class="flex gap-2 w-full items-center justify-center">
+                        <img src="/icons/UpdateMain/refresh.svg" alt="..." />
+                        <img src="/icons/UpdateMain/code.png" class="w-full" alt="..." />
+                    </div>
+                    <input type="text" class="border mt-2 border-[#E1E2E4] rounded-2xl py-2 w-full px-3"
+                        placeholder="عبارت بالا را وارد کنید..." />
+
+                </div>
+
+
+                <div class="flex flex-col pt-5 lg:hidden gap-2">
+                    <div class="flex justify-between items-center">
+                        <span class="text-lg font-bold text-crs-first">
+                            3.390 USD
+                        </span>
+
+                        <div class="flex items-center gap-2">
+                            <span>
+                                قیمت کل:
+                            </span>
+                            <img src="/icons/UpdateMain/arrow.svg" alt="" class="rotate-180" />
+                        </div>
+                    </div>
+
+                    <div class="flex items-center w-full gap-2">
+                        <button id="calendar_popup_cancel_btn_ja"
+                            class="flex px-8 w-full h-10 items-center justify-center text-[#307FF8] border-[0.125rem] border-[#307FF8] rounded-[0.625rem] pt-1 cursor-pointer">
+                            Cancel</button>
+                        <button id="calendar_popup_confirm_btn_ja"
+                            class="flex px-8 h-10 w-full items-center justify-center text-white bg-[#307FF8] rounded-[0.625rem] pt-1 cursor-pointer">
+                            Confirm</button>
+                    </div>
+                </div>
             </div>
+
             <div
-                class="w-[16rem] bg-[#F7F7F9] rounded-[1rem] flex flex-col gap-6 justify-between shrink-0 mobile:hidden">
+                class="w-[16rem] bg-[#F7F7F9] rounded-[1rem] hidden lg:flex flex-col gap-6 justify-between shrink-0 mobile:hidden">
                 <div class="w-full shrink-0 p-2.5">
                     <ul class="text-[#5B4A42] leading-[1.75rem] space-y-3 w-full">
                         <li class="flex items-center justify-between">1 Adult: <span dir="ltr">14.25 $</span></li>
@@ -3303,7 +3341,7 @@
                         متوحه شدم
                     </button>
                 </div>
-            </div>
+        </div>
         </div>
     </div>
     <!-- payment modal end -->

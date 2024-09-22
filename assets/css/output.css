@@ -675,6 +675,10 @@ video {
   inset: -0.25rem;
 }
 
+.-bottom-32 {
+  bottom: -8rem;
+}
+
 .-left-2 {
   left: -0.5rem;
 }
@@ -813,34 +817,6 @@ video {
 
 .top-\[5rem\] {
   top: 5rem;
-}
-
-.-bottom-5 {
-  bottom: -1.25rem;
-}
-
-.-bottom-10 {
-  bottom: -2.5rem;
-}
-
-.-bottom-7 {
-  bottom: -1.75rem;
-}
-
-.-bottom-20 {
-  bottom: -5rem;
-}
-
-.-bottom-40 {
-  bottom: -10rem;
-}
-
-.-bottom-32 {
-  bottom: -8rem;
-}
-
-.-bottom-28 {
-  bottom: -7rem;
 }
 
 .isolate {
@@ -1482,6 +1458,10 @@ video {
   width: 13.25rem;
 }
 
+.w-\[13\.563rem\] {
+  width: 13.563rem;
+}
+
 .w-\[15rem\] {
   width: 15rem;
 }
@@ -1654,14 +1634,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[13\.563rem\] {
-  width: 13.563rem;
 }
 
 .min-w-\[13\.25rem\] {
@@ -3212,16 +3184,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
-}
-
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\/icons\/UpdateMain\/h-air\.jpg\'\)\] {
   background-image: url('/icons/UpdateMain/h-air.jpg');
 }
@@ -3620,6 +3582,10 @@ video {
 
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pt-6 {
@@ -4269,15 +4235,15 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-md {
   --tw-shadow: 0 0.25rem 0.375rem -0.063rem rgb(0 0 0 / 0.1), 0 0.125rem 0.25rem -0.125rem rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 0.25rem 0.375rem -0.063rem var(--tw-shadow-color), 0 0.125rem 0.25rem -0.125rem var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -5332,6 +5298,10 @@ input:focus {
     height: 49.125rem;
   }
 
+  .lg\:h-\[85\%\] {
+    height: 85%;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -5372,6 +5342,10 @@ input:focus {
     width: 80%;
   }
 
+  .lg\:w-\[85rem\] {
+    width: 85rem;
+  }
+
   .lg\:w-auto {
     width: auto;
   }
@@ -5408,6 +5382,10 @@ input:focus {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-5 {
@@ -5452,6 +5430,11 @@ input:focus {
   .lg\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:text-4xl {
@@ -5667,6 +5650,10 @@ input:focus {
 
   .mobile\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .mobile\:pb-5 {
+    padding-bottom: 1.25rem;
   }
 
   .mobile\:pb-\[8rem\] {
